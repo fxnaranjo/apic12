@@ -11,3 +11,5 @@ spec:
     $path: ./Swagger_Petstore-spec.yml
   policy-sequence:
     - $ref: PetStore:PetPolicy:1.0
+  properties:
+    $ref: PetStore:PetProperties:1.0

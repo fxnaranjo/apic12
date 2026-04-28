@@ -1,0 +1,13 @@
+kind: Properties
+apiVersion: api.ibm.com/v1
+metadata:
+  name: PetProperties
+  namespace: PetStore
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  target-url:
+    value: https://petstore.swagger.io
+    encoded: false
+    description: ''
