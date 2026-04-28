@@ -16,12 +16,18 @@ spec:
     gateway: datapower-api-gateway
     assembly:
       execute:
+        - gatewayscript:
+            version: 2.0.0
+            title: gatewayscript
+            source: |-
+              var aux=  context.get("request.path");
+              console.error('AUX: '+aux);
         - invoke:
             version: 2.3.0
             title: invoke
             backend-type: detect
             header-control:
-              type: blocklist
+              type: allowlist
               values: []
             parameter-control:
               type: allowlist
@@ -36,6 +42,92 @@ spec:
             websocket-upgrade: false
             graphql-send-type: detect
             target-url: $(target-url)$(request.path)
+            output: ''
+        - gatewayscript:
+            version: 2.0.0
+            title: gatewayscript
+            source: |-
+              context.message.body.readAsJSON(function(error, json)
+                {
+                  if (error) {
+                    console.error('readAsJSON error: '+error);
+                  } 
+                  else {
+                  
+                  
+                    
+                    console.error('JSON: '+JSON.stringify(json));
+                    
+                  }
+                });
+        - switch:
+            version: 2.1.0
+            title: switch
+            case:
+              - condition: ($statusCode() = 200)
+                execute:
+                  - map:
+                      inputs:
+                        input:
+                          schema:
+                            type: object
+                            properties:
+                              id:
+                                type: number
+                              category:
+                                type: object
+                                properties:
+                                  id:
+                                    type: number
+                                  name:
+                                    type: string
+                              name:
+                                type: string
+                              photoUrls:
+                                type: array
+                                items:
+                                  type: string
+                              tags:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    id:
+                                      type: number
+                                    name:
+                                      type: string
+                              status:
+                                type: string
+                          variable: message.body
+                          content: application/json
+                      outputs:
+                        output:
+                          schema:
+                            type: object
+                            properties:
+                              id:
+                                type: number
+                              name:
+                                type: string
+                              status:
+                                type: string
+                          variable: message.body
+                          content: application/json
+                      actions:
+                        - set: output.id
+                          from: input.id
+                        - set: output.name
+                          from: input.name
+                        - set: output.status
+                          default: fxn
+                      version: 2.1.0
+                      title: map
+                      options:
+                        mapEmulateV4EmptyJSONObject: false
+                        mapEmulateV4DefaultRequiredProps: false
+                        mapEnablePostProcessingJSON: false
+                        mapReferenceLimit: 1
+      catch: []
     activity-log:
       enabled: true
       success-content: activity
