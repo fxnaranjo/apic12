@@ -1,0 +1,15 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: SwaggerPetstore-OpenAPI30
+  namespace: PetStore3
+  version: 1.0.27
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./SwaggerPetstore-OpenAPI30-spec.yml
+  policy-sequence:
+    - $ref: PetStore3:PetPolicy3:1.0
+  properties:
+    $ref: PetStore3:PetProperties3:1.0
