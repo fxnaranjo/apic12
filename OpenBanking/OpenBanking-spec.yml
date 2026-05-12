@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: OpenBanking
 servers:
-  - url: http://ir-02-small-http-cp4i.apps.itz-ulpyc9.hub04-lb.techzone.ibm.com/openbanking/v1
+  - url: /openbanking/v1
 x-ibm-configuration: {}
 paths:
   /accounts/{accountId}:

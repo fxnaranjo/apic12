@@ -14,5 +14,5 @@ spec:
       verb: GET
       target:
         timeout: 30
-        url: "'http://ir-02-small-ir.cp4i.svc.cluster.local:7800' & $variable('request.path')"
+        url: "'http://ir-02-small-ir.cp4i.svc.cluster.local:7800/openbanking/v1' & $relativeUrl('request')"
         urlType: jsonata
