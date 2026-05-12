@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: OpenBanking
+  version: 1.0.0
+  description: OpenBanking
+servers:
+  - url: http://ir-02-small-http-cp4i.apps.itz-ulpyc9.hub04-lb.techzone.ibm.com/openbanking/v1
+x-ibm-configuration: {}
+paths:
+  /accounts/{accountId}:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                title: account
+                type: object
+                properties:
+                  resourceId:
+                    type: string
+                  iban:
+                    type: string
+                  _links:
+                    type: object
+                    properties:
+                      balances:
+                        type: object
+                        properties:
+                          href:
+                            type: string
+                      transactions:
+                        type: object
+                        properties:
+                          href:
+                            type: string
+                  currency:
+                    type: string
+                  product:
+                    type: string
+                  cashAccountType:
+                    type: string
+                  name:
+                    type: string
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          schema:
+            type: string
+components:
+  responses: {}

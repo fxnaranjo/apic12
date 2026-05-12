@@ -1,0 +1,15 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: OpenBanking
+  namespace: OpenBanking
+  version: '1'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./OpenBanking-spec.yml
+  policy-sequence:
+    - $ref: OpenBanking:OpenBanking_Policy:1.0
+  properties:
+    $ref: OpenBanking:OpenBankingProperties:1.0

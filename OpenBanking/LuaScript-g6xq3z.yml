@@ -1,0 +1,17 @@
+kind: LuaScript
+apiVersion: api.ibm.com/v1
+metadata:
+  name: LuaScript-g6xq3z
+  namespace: OpenBanking
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  source: |+
+    console.error("Hello, world!")  -- Hello, world!
+    var1 = context:get('request.path')
+
+    console.error("Hello %s", var1)
+

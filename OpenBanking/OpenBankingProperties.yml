@@ -1,0 +1,13 @@
+kind: Properties
+apiVersion: api.ibm.com/v1
+metadata:
+  name: OpenBankingProperties
+  namespace: OpenBanking
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  target-url:
+    value: http://ir-02-small-ir.cp4i.svc.cluster.local:7800
+    description: ''
+    encoded: false

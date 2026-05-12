@@ -1,0 +1,18 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: invoke-OpenBanking_Policy
+  namespace: OpenBanking
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  endpoint:
+    http:
+      verb: GET
+      target:
+        timeout: 30
+        url: "'http://ir-02-small-ir.cp4i.svc.cluster.local:7800' & $variable('request.path')"
+        urlType: jsonata

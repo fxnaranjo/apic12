@@ -1,0 +1,16 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: OpenBanking_Policy
+  namespace: OpenBanking
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: OpenBanking:LuaScript-g6xq3z:1.0
+    - $ref: OpenBanking:invoke-OpenBanking_Policy:1.0
+  monitoring:
+    $ref: OpenBanking:telemetry-OpenBanking_Policy:1.0
