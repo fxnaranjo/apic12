@@ -1,7 +1,7 @@
 kind: LuaScript
 apiVersion: api.ibm.com/v1
 metadata:
-  name: LuaScript-g6xq3z
+  name: LuaScript-249ure
   namespace: OpenBanking
   version: '1.0'
   tags: []
@@ -10,8 +10,8 @@ metadata:
       - nano
 spec:
   source: |+
-    console.error("Hello, world 2")  -- Hello, world!
-    var1 = context:get('request.path')
+    console.error("After Invoke") 
 
-    console.error("Hello %s", var1)
+    local req = context:get_message('request')
 
+    console.error("Response %s", req)
