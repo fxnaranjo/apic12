@@ -9,8 +9,8 @@ metadata:
     gatewayTypes:
       - nano
 spec:
-  source: |+
-    console.error("After Invoke") 
+  source: |
+    console.error("AFTER INVOKE")
 
     local req = context:get_message('request')
 

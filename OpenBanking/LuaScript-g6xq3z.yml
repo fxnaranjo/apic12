@@ -10,7 +10,7 @@ metadata:
       - nano
 spec:
   source: |+
-    console.error("Hello, world 2")  -- Hello, world!
+    console.error("BEFORE INVOKE")
     var1 = context:get('request.path')
 
     console.error("Hello %s", var1)
