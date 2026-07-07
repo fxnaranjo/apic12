@@ -5,10 +5,10 @@ projects:
     lastUpdated: 1777417922768
     id: N7KWzthm
   OpenBanking:
+    id: hZS46UBt
     description: ''
     tags: []
-    lastUpdated: 1778606013747
-    id: hZS46UBt
+    lastUpdated: 1783390739579
   MCP-Test:
     description: MCP-Test
     tags:

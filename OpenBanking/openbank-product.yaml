@@ -1,0 +1,35 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: openbank-product
+  namespace: OpenBanking
+  version: '1.0'
+  tags: []
+spec:
+  apis:
+    - $ref: OpenBanking:OpenBanking:1
+  plans:
+    - $ref: OpenBanking:openbank-plan:1.0
+  extensions:
+    dp-nano-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        replicas: 1
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 512Mi
+          requests:
+            cpu: 1000m
+            memory: 512Mi
+        autoScaling:
+          enabled: true
+          fromZero:
+            replicas: 1
+          hpa:
+            enabled: true
+            targetUtilization:
+              cpu: 70
+              memory: 70
+            minReplicas: 1
+            maxReplicas: 10
