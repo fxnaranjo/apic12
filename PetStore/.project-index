@@ -103,13 +103,13 @@
       "filePath": "PetStore/PetPolicy3.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1783384621218,
+      "lastIndexed": 1783965724669,
       "schemaVersion": 1,
       "kind": "DataPowerAssembly",
       "name": "PetPolicy3",
       "namespace": "PetStore3",
       "version": "1.0",
-      "contentHash": "0733668f0f38b234"
+      "contentHash": "9eec1ec6c925cc6f"
     }
   ],
   "edges": [
@@ -209,7 +209,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1783384621457,
-      "lastValidated": 1783384621457
+      "lastValidated": 1783965724675
     },
     {
       "id": "d0fdc2fa-2450-46a6-b0a6-295d1e15304d",
