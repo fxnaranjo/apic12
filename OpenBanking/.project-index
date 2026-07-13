@@ -57,13 +57,13 @@
       "filePath": "OpenBanking/openbank-product.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1783387001098,
+      "lastIndexed": 1783528554156,
       "schemaVersion": 1,
       "kind": "Product",
       "name": "openbank-product",
       "namespace": "OpenBanking",
       "version": "1.0",
-      "contentHash": "f06e366fbdde5b4c"
+      "contentHash": "19ac172551c721d8"
     },
     {
       "id": "a66fc648-be30-4bdb-b164-607d7fdf6c81:0",

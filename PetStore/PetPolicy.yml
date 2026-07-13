@@ -37,7 +37,7 @@ spec:
             verb: keep
             chunked-uploads: true
             persistent-connection: true
-            cache-response: protocol
+            cache-response: time-to-live
             cache-ttl: 900
             websocket-upgrade: false
             graphql-send-type: detect

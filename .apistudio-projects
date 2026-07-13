@@ -1,14 +1,14 @@
 projects:
   PetStore:
+    id: N7KWzthm
     description: ''
     tags: []
-    lastUpdated: 1777417922768
-    id: N7KWzthm
+    lastUpdated: 1783965626747
   OpenBanking:
     id: hZS46UBt
     description: ''
     tags: []
-    lastUpdated: 1783390739579
+    lastUpdated: 1783528554166
   MCP-Test:
     description: MCP-Test
     tags:

@@ -6,13 +6,22 @@
       "filePath": "PetStore/PetProperties.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1783384621307,
+      "lastIndexed": 1783965407137,
       "schemaVersion": 1,
       "kind": "Properties",
       "name": "PetProperties",
       "namespace": "PetStore",
       "version": "1.0",
-      "contentHash": "d98e6a7775d2035b"
+      "contentHash": "859e43ffaee060f2"
+    },
+    {
+      "id": "4c121cac-4456-4e11-8168-91c020e764b2:0",
+      "projectId": "N7KWzthm",
+      "filePath": "PetStore/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1783965407134,
+      "schemaVersion": 1
     },
     {
       "id": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
@@ -29,13 +38,13 @@
       "filePath": "PetStore/PetPolicy.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1783384621142,
+      "lastIndexed": 1783965531536,
       "schemaVersion": 1,
       "kind": "DataPowerAssembly",
       "name": "PetPolicy",
       "namespace": "PetStore",
       "version": "1.0",
-      "contentHash": "ed61b8c0e1d07ddb"
+      "contentHash": "33b70cf88b2bfa50"
     },
     {
       "id": "9ed0dc81-41e3-483b-a584-76abf22f51ec:0",
@@ -43,13 +52,13 @@
       "filePath": "PetStore/PetProperties3.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1783384621356,
+      "lastIndexed": 1783965407137,
       "schemaVersion": 1,
       "kind": "Properties",
       "name": "PetProperties3",
       "namespace": "PetStore3",
       "version": "1.0",
-      "contentHash": "e4d7537ecd0e2f2e"
+      "contentHash": "22f08cc7961be6ac"
     },
     {
       "id": "a1b842f9-e45e-4f3e-a478-239d8e4c1273:0",
@@ -57,13 +66,13 @@
       "filePath": "PetStore/Swagger_Petstore.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1783384621556,
+      "lastIndexed": 1783965407134,
       "schemaVersion": 1,
       "kind": "API",
       "name": "Swagger_Petstore",
       "namespace": "PetStore",
       "version": "1.0.7",
-      "contentHash": "54cea5cb873484f5"
+      "contentHash": "037c75261cc2dcb4"
     },
     {
       "id": "e1fddb3c-d836-4b5b-87af-a67908265299:0",
@@ -80,13 +89,13 @@
       "filePath": "PetStore/SwaggerPetstore-OpenAPI30.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1783384621455,
+      "lastIndexed": 1783965407129,
       "schemaVersion": 1,
       "kind": "API",
       "name": "SwaggerPetstore-OpenAPI30",
       "namespace": "PetStore3",
       "version": "1.0.27",
-      "contentHash": "645f2e85be466a9c"
+      "contentHash": "c4787889a71c73b8"
     },
     {
       "id": "fc208adf-6819-48e9-b944-f856898c2c05:0",
@@ -151,7 +160,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1783384621558,
-      "lastValidated": 1783384621558
+      "lastValidated": 1783965531547
     },
     {
       "id": "8e34b2b0-8b27-42a1-b536-8277be932a87",

@@ -25,11 +25,11 @@ spec:
         autoScaling:
           enabled: true
           fromZero:
-            replicas: 1
+            replicas: 3
           hpa:
             enabled: true
             targetUtilization:
               cpu: 70
               memory: 70
             minReplicas: 1
-            maxReplicas: 10
+            maxReplicas: 100
