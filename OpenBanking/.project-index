@@ -71,13 +71,13 @@
       "filePath": "OpenBanking/openbank-plan.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1783386845626,
+      "lastIndexed": 1784066768253,
       "schemaVersion": 1,
       "kind": "Plan",
       "name": "openbank-plan",
       "namespace": "OpenBanking",
       "version": "1.0",
-      "contentHash": "0ec124f8af30e1d2"
+      "contentHash": "108a0bf5554bb831"
     },
     {
       "id": "d8ffe8f0-7520-404e-95e1-e1ea1b416830:0",
@@ -159,6 +159,18 @@
       "lastValidated": 1783384621230
     },
     {
+      "id": "1fe17610-d9c0-42b7-881e-e33be11820d4",
+      "projectId": "hZS46UBt",
+      "sourceNodeId": "a66fc648-be30-4bdb-b164-607d7fdf6c81:0",
+      "targetNodeId": "f000e750-476d-4e28-90bb-35c7d28aa2dc:0",
+      "targetRefType": "same-project",
+      "targetRefString": "OpenBanking:OpenBanking:1",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1784066768255,
+      "lastValidated": 1784066768255
+    },
+    {
       "id": "32cece48-9e2e-440a-baca-2323767a991b",
       "projectId": "hZS46UBt",
       "sourceNodeId": "d8ffe8f0-7520-404e-95e1-e1ea1b416830:0",
@@ -216,7 +228,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1783386846705,
-      "lastValidated": 1783386846705
+      "lastValidated": 1784066768257
     },
     {
       "id": "cfd280e0-2e3b-49e2-b4ca-ca3885b30e69",

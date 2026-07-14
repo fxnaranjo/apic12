@@ -1,0 +1,29 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: PetPlan
+  namespace: PetStore
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  qos:
+    withQuota: {}
+  extensions:
+    dp-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        apis:
+          - $ref: PetStore:Swagger_Petstore:1.0.7
+            operations:
+              - path: /pet/{petId}
+                method: get
+          - $ref: PetStore3:SwaggerPetstore-OpenAPI30:1.0.27
+            operations:
+              - path: /pet/{petId}
+                method: get
+        withAssemblyRateLimit: []
+        withRateLimit:
+          - name: PetRateLimit
+            maxRequest: 10
+            interval: 1m

@@ -1,0 +1,13 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: PetProduct
+  namespace: PetStore
+  version: '1.0'
+  tags: []
+spec:
+  apis:
+    - $ref: PetStore:Swagger_Petstore:1.0.7
+    - $ref: PetStore3:SwaggerPetstore-OpenAPI30:1.0.27
+  plans:
+    - $ref: PetStore:PetPlan:1.0

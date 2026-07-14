@@ -100,3 +100,11 @@ definitions:
 externalDocs:
   description: Find out more about Swagger
   url: http://swagger.io
+securityDefinitions:
+  api-key:
+    name: X-IBM-Client-Id
+    in: header
+    description: ''
+    type: apiKey
+security:
+  - api-key: []

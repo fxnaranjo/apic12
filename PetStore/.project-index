@@ -1,6 +1,20 @@
 {
   "nodes": [
     {
+      "id": "1115ee72-225a-4e17-89fd-4f81a57f6b29:0",
+      "projectId": "N7KWzthm",
+      "filePath": "PetStore/PetPlan.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1784067768273,
+      "schemaVersion": 1,
+      "kind": "Plan",
+      "name": "PetPlan",
+      "namespace": "PetStore",
+      "version": "1.0",
+      "contentHash": "7b07b15ec7d27198"
+    },
+    {
       "id": "21cab915-396c-47bf-b6bf-0a5f81e2fa0a:0",
       "projectId": "N7KWzthm",
       "filePath": "PetStore/PetProperties.yml",
@@ -31,6 +45,20 @@
       "assetType": "support",
       "lastIndexed": 1783384621507,
       "schemaVersion": 1
+    },
+    {
+      "id": "7b239f08-f815-44e3-a4df-cbf921c4c5f4:0",
+      "projectId": "N7KWzthm",
+      "filePath": "PetStore/PetProduct.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1784065939506,
+      "schemaVersion": 1,
+      "kind": "Product",
+      "name": "PetProduct",
+      "namespace": "PetStore",
+      "version": "1.0",
+      "contentHash": "a9dc6618e71f71a4"
     },
     {
       "id": "9a47675c-c6cc-4f20-b46a-08c6d3fbbe99:0",
@@ -163,6 +191,30 @@
       "lastValidated": 1784065686567
     },
     {
+      "id": "4e1b331b-0c25-468b-b2bc-463e4f0866d4",
+      "projectId": "N7KWzthm",
+      "sourceNodeId": "7b239f08-f815-44e3-a4df-cbf921c4c5f4:0",
+      "targetNodeId": "a1b842f9-e45e-4f3e-a478-239d8e4c1273:0",
+      "targetRefType": "same-project",
+      "targetRefString": "PetStore:Swagger_Petstore:1.0.7",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1784065915865,
+      "lastValidated": 1784065915865
+    },
+    {
+      "id": "5cbde81b-fce5-46a3-97fd-2064b9821a8d",
+      "projectId": "N7KWzthm",
+      "sourceNodeId": "7b239f08-f815-44e3-a4df-cbf921c4c5f4:0",
+      "targetNodeId": "1115ee72-225a-4e17-89fd-4f81a57f6b29:0",
+      "targetRefType": "same-project",
+      "targetRefString": "PetStore:PetPlan:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1784065939509,
+      "lastValidated": 1784067768278
+    },
+    {
       "id": "8e34b2b0-8b27-42a1-b536-8277be932a87",
       "projectId": "N7KWzthm",
       "sourceNodeId": "eedd7762-0291-484e-9c3e-bb043cf26990:0",
@@ -236,6 +288,42 @@
       "invalidReason": "Target file not found: #/components/schemas/Pet",
       "createdAt": 1783384621408,
       "lastValidated": 1783384621408
+    },
+    {
+      "id": "db69534e-ff3f-444e-82cc-7e1fda0a92e0",
+      "projectId": "N7KWzthm",
+      "sourceNodeId": "7b239f08-f815-44e3-a4df-cbf921c4c5f4:0",
+      "targetNodeId": "eedd7762-0291-484e-9c3e-bb043cf26990:0",
+      "targetRefType": "same-project",
+      "targetRefString": "PetStore3:SwaggerPetstore-OpenAPI30:1.0.27",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1784065915865,
+      "lastValidated": 1784065915865
+    },
+    {
+      "id": "eb05675d-6316-4874-9276-d089e06c8004",
+      "projectId": "N7KWzthm",
+      "sourceNodeId": "1115ee72-225a-4e17-89fd-4f81a57f6b29:0",
+      "targetNodeId": "a1b842f9-e45e-4f3e-a478-239d8e4c1273:0",
+      "targetRefType": "same-project",
+      "targetRefString": "PetStore:Swagger_Petstore:1.0.7",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1784066007732,
+      "lastValidated": 1784066007732
+    },
+    {
+      "id": "ef6f1cdf-de92-4fd9-8a71-18fa2f8b10a0",
+      "projectId": "N7KWzthm",
+      "sourceNodeId": "1115ee72-225a-4e17-89fd-4f81a57f6b29:0",
+      "targetNodeId": "eedd7762-0291-484e-9c3e-bb043cf26990:0",
+      "targetRefType": "same-project",
+      "targetRefString": "PetStore3:SwaggerPetstore-OpenAPI30:1.0.27",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1784066007732,
+      "lastValidated": 1784066007732
     },
     {
       "id": "f5963241-67fa-4f69-bb52-423044e6ae85",
