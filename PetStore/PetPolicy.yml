@@ -16,13 +16,6 @@ spec:
     gateway: datapower-api-gateway
     assembly:
       execute:
-        - ratelimit:
-            version: 2.4.0
-            title: ratelimit
-            source: gateway-named
-            rate-limit:
-              - name: ratelimit-reject-ALL
-                operation: consume
         - gatewayscript:
             version: 2.0.0
             title: gatewayscript
