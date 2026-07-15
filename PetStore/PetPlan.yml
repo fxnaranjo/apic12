@@ -23,7 +23,4 @@ spec:
               - path: /pet/{petId}
                 method: get
         withAssemblyRateLimit: []
-        withRateLimit:
-          - name: PetRateLimit
-            maxRequest: 10
-            interval: 1m
+        withRateLimit: []
