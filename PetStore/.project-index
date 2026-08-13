@@ -15,6 +15,20 @@
       "contentHash": "936cc343e5cb5478"
     },
     {
+      "id": "16d2b840-5408-48cb-9045-9bf0b0446b2f:0",
+      "projectId": "N7KWzthm",
+      "filePath": "PetStore/tests/TestCases.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1786634582317,
+      "schemaVersion": 1,
+      "kind": "test",
+      "name": "TestCases",
+      "namespace": "PetStore",
+      "version": "1.0",
+      "contentHash": "8130b4c80268e83d"
+    },
+    {
       "id": "21cab915-396c-47bf-b6bf-0a5f81e2fa0a:0",
       "projectId": "N7KWzthm",
       "filePath": "PetStore/PetProperties.yml",
@@ -47,6 +61,20 @@
       "schemaVersion": 1
     },
     {
+      "id": "6767b447-503c-4838-aa88-9efcf2dfebe0:0",
+      "projectId": "N7KWzthm",
+      "filePath": "PetStore/tests/assertions/GET-pet-0-invalid-404.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1786634138805,
+      "schemaVersion": 1,
+      "kind": "assertion",
+      "name": "GET-pet-0-invalid-404",
+      "namespace": "PetStore",
+      "version": "1.0",
+      "contentHash": "704e7b9d161d3dbf"
+    },
+    {
       "id": "7b239f08-f815-44e3-a4df-cbf921c4c5f4:0",
       "projectId": "N7KWzthm",
       "filePath": "PetStore/PetProduct.yaml",
@@ -59,6 +87,20 @@
       "namespace": "PetStore",
       "version": "1.0",
       "contentHash": "a9dc6618e71f71a4"
+    },
+    {
+      "id": "7b3d05e7-f844-435f-b150-42ebf612cf2f:0",
+      "projectId": "N7KWzthm",
+      "filePath": "PetStore/tests/assertions/GET-pet-0-200.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1786634137624,
+      "schemaVersion": 1,
+      "kind": "assertion",
+      "name": "GET-pet-0-200",
+      "namespace": "PetStore",
+      "version": "1.0",
+      "contentHash": "584ca20fddcaeb23"
     },
     {
       "id": "9a47675c-c6cc-4f20-b46a-08c6d3fbbe99:0",
@@ -101,6 +143,34 @@
       "namespace": "PetStore",
       "version": "1.0.7",
       "contentHash": "037c75261cc2dcb4"
+    },
+    {
+      "id": "a233ce35-dd0a-47a0-bdd6-8daddd054a44:0",
+      "projectId": "N7KWzthm",
+      "filePath": "PetStore/FxnEnv.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1786634189190,
+      "schemaVersion": 1,
+      "kind": "environment",
+      "name": "FxnEnv",
+      "namespace": "PetStore",
+      "version": "1.0",
+      "contentHash": "a9badab97d1d5c50"
+    },
+    {
+      "id": "cd758bef-8707-4f23-b29a-0bd520c7d6cf:0",
+      "projectId": "N7KWzthm",
+      "filePath": "PetStore/tests/assertions/GET-pet-0-400.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1786634138305,
+      "schemaVersion": 1,
+      "kind": "assertion",
+      "name": "GET-pet-0-400",
+      "namespace": "PetStore",
+      "version": "1.0",
+      "contentHash": "c6aea038ddc13474"
     },
     {
       "id": "e1fddb3c-d836-4b5b-87af-a67908265299:0",
@@ -157,14 +227,13 @@
       "id": "06ca4b3c-f523-439f-93f9-aa19b6d753bd",
       "projectId": "N7KWzthm",
       "sourceNodeId": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
-      "targetNodeId": null,
+      "targetNodeId": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
       "targetRefType": "same-project",
       "targetRefString": "#/definitions/Pet",
       "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/definitions/Pet",
+      "isValid": true,
       "createdAt": 1783384621510,
-      "lastValidated": 1783384621510
+      "lastValidated": 1786634083031
     },
     {
       "id": "0faeabda-6c1b-42de-b78c-0fdc731c42fc",
@@ -189,6 +258,30 @@
       "isValid": true,
       "createdAt": 1783384621558,
       "lastValidated": 1784125946848
+    },
+    {
+      "id": "24341abc-e924-4b03-a6ba-5bd455aaf688",
+      "projectId": "N7KWzthm",
+      "sourceNodeId": "16d2b840-5408-48cb-9045-9bf0b0446b2f:0",
+      "targetNodeId": "6767b447-503c-4838-aa88-9efcf2dfebe0:0",
+      "targetRefType": "same-project",
+      "targetRefString": "PetStore:GET-pet-0-invalid-404:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1786634139435,
+      "lastValidated": 1786634139435
+    },
+    {
+      "id": "2fc5e8e1-89b7-4987-b56f-207ed0d130ef",
+      "projectId": "N7KWzthm",
+      "sourceNodeId": "16d2b840-5408-48cb-9045-9bf0b0446b2f:0",
+      "targetNodeId": "cd758bef-8707-4f23-b29a-0bd520c7d6cf:0",
+      "targetRefType": "same-project",
+      "targetRefString": "PetStore:GET-pet-0-400:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1786634139435,
+      "lastValidated": 1786634139435
     },
     {
       "id": "4e1b331b-0c25-468b-b2bc-463e4f0866d4",
@@ -230,14 +323,25 @@
       "id": "8f0503c1-c27d-40b3-a980-7fd1a00e7b15",
       "projectId": "N7KWzthm",
       "sourceNodeId": "e1fddb3c-d836-4b5b-87af-a67908265299:0",
-      "targetNodeId": null,
+      "targetNodeId": "e1fddb3c-d836-4b5b-87af-a67908265299:0",
       "targetRefType": "same-project",
       "targetRefString": "#/components/schemas/Category",
       "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/components/schemas/Category",
+      "isValid": true,
       "createdAt": 1783384621408,
-      "lastValidated": 1783384621408
+      "lastValidated": 1786634083032
+    },
+    {
+      "id": "8f8a22e2-5c47-47f9-b1de-f35182d3ecc9",
+      "projectId": "N7KWzthm",
+      "sourceNodeId": "16d2b840-5408-48cb-9045-9bf0b0446b2f:0",
+      "targetNodeId": "a1b842f9-e45e-4f3e-a478-239d8e4c1273:0",
+      "targetRefType": "same-project",
+      "targetRefString": "PetStore:Swagger_Petstore:1.0.7",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1786634582319,
+      "lastValidated": 1786634582319
     },
     {
       "id": "9bb55efc-ad84-48d8-99f4-a7c9096caa1c",
@@ -264,30 +368,52 @@
       "lastValidated": 1783966258258
     },
     {
+      "id": "ac8ee81c-343d-4a65-a4e9-7a2fd4bacf7a",
+      "projectId": "N7KWzthm",
+      "sourceNodeId": "16d2b840-5408-48cb-9045-9bf0b0446b2f:0",
+      "targetNodeId": "7b3d05e7-f844-435f-b150-42ebf612cf2f:0",
+      "targetRefType": "same-project",
+      "targetRefString": "PetStore:GET-pet-0-200:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1786634139435,
+      "lastValidated": 1786634139435
+    },
+    {
+      "id": "c13a291e-cb84-4846-90d0-0c7a134a10a1",
+      "projectId": "N7KWzthm",
+      "sourceNodeId": "16d2b840-5408-48cb-9045-9bf0b0446b2f:0",
+      "targetNodeId": "a233ce35-dd0a-47a0-bdd6-8daddd054a44:0",
+      "targetRefType": "same-project",
+      "targetRefString": "PetStore:FxnEnv:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1786634197246,
+      "lastValidated": 1786634197246
+    },
+    {
       "id": "d0fdc2fa-2450-46a6-b0a6-295d1e15304d",
       "projectId": "N7KWzthm",
       "sourceNodeId": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
-      "targetNodeId": null,
+      "targetNodeId": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
       "targetRefType": "same-project",
       "targetRefString": "#/definitions/Tag",
       "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/definitions/Tag",
+      "isValid": true,
       "createdAt": 1783384621510,
-      "lastValidated": 1783384621510
+      "lastValidated": 1786634083033
     },
     {
       "id": "d49a97ea-9f44-4d50-a2f6-cb44579e7c33",
       "projectId": "N7KWzthm",
       "sourceNodeId": "e1fddb3c-d836-4b5b-87af-a67908265299:0",
-      "targetNodeId": null,
+      "targetNodeId": "e1fddb3c-d836-4b5b-87af-a67908265299:0",
       "targetRefType": "same-project",
       "targetRefString": "#/components/schemas/Pet",
       "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/components/schemas/Pet",
+      "isValid": true,
       "createdAt": 1783384621408,
-      "lastValidated": 1783384621408
+      "lastValidated": 1786634083040
     },
     {
       "id": "db69534e-ff3f-444e-82cc-7e1fda0a92e0",
@@ -329,27 +455,25 @@
       "id": "f5963241-67fa-4f69-bb52-423044e6ae85",
       "projectId": "N7KWzthm",
       "sourceNodeId": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
-      "targetNodeId": null,
+      "targetNodeId": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
       "targetRefType": "same-project",
       "targetRefString": "#/definitions/Category",
       "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/definitions/Category",
+      "isValid": true,
       "createdAt": 1783384621510,
-      "lastValidated": 1783384621510
+      "lastValidated": 1786634083081
     },
     {
       "id": "fcc7a9b8-6636-4741-9175-93d8b219312c",
       "projectId": "N7KWzthm",
       "sourceNodeId": "e1fddb3c-d836-4b5b-87af-a67908265299:0",
-      "targetNodeId": null,
+      "targetNodeId": "e1fddb3c-d836-4b5b-87af-a67908265299:0",
       "targetRefType": "same-project",
       "targetRefString": "#/components/schemas/Tag",
       "targetRefKind": "support",
-      "isValid": false,
-      "invalidReason": "Target file not found: #/components/schemas/Tag",
+      "isValid": true,
       "createdAt": 1783384621408,
-      "lastValidated": 1783384621408
+      "lastValidated": 1786634083085
     }
   ]
 }

@@ -1,0 +1,43 @@
+kind: test
+apiVersion: api.ibm.com/v1
+metadata:
+  name: TestCases
+  namespace: PetStore
+  version: '1.0'
+  tags: []
+spec:
+  api:
+    $ref: PetStore:Swagger_Petstore:1.0.7
+  request:
+    - method: GET
+      resource: /pet/{petId}
+      headers:
+        - key: accept
+          value: application/json
+      parameters: []
+      assertions:
+        $ref: PetStore:GET-pet-0-200:1.0
+    - method: GET
+      resource: /pet/0
+      headers:
+        - key: accept
+          value: application/json
+      parameters: []
+      assertions:
+        $ref: PetStore:GET-pet-0-400:1.0
+      payload:
+        raw:
+          json: |-
+            {
+              "key": "invalid payload"
+            }
+    - method: GET
+      resource: /pet/0/invalid
+      headers:
+        - key: accept
+          value: application/json
+      parameters: []
+      assertions:
+        $ref: PetStore:GET-pet-0-invalid-404:1.0
+  environment:
+    - $ref: PetStore:FxnEnv:1.0
