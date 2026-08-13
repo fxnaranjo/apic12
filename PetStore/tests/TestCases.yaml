@@ -7,7 +7,7 @@ metadata:
   tags: []
 spec:
   api:
-    $ref: PetStore:Swagger_Petstore:1.0.7
+    $endpoint: ''
   request:
     - method: GET
       resource: /pet/{petId}

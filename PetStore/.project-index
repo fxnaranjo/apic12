@@ -6,13 +6,13 @@
       "filePath": "PetStore/PetPlan.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1784125675684,
+      "lastIndexed": 1786637782100,
       "schemaVersion": 1,
       "kind": "Plan",
       "name": "PetPlan",
       "namespace": "PetStore",
       "version": "1.0",
-      "contentHash": "936cc343e5cb5478"
+      "contentHash": "d69916b0dc60d1a7"
     },
     {
       "id": "16d2b840-5408-48cb-9045-9bf0b0446b2f:0",
@@ -20,13 +20,13 @@
       "filePath": "PetStore/tests/TestCases.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1786634582317,
+      "lastIndexed": 1786634633927,
       "schemaVersion": 1,
       "kind": "test",
       "name": "TestCases",
       "namespace": "PetStore",
       "version": "1.0",
-      "contentHash": "8130b4c80268e83d"
+      "contentHash": "1b7c661fc932fd61"
     },
     {
       "id": "21cab915-396c-47bf-b6bf-0a5f81e2fa0a:0",
@@ -108,7 +108,7 @@
       "filePath": "PetStore/PetPolicy.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1784125946843,
+      "lastIndexed": 1786635687791,
       "schemaVersion": 1,
       "kind": "DataPowerAssembly",
       "name": "PetPolicy",
@@ -224,18 +224,6 @@
       "lastValidated": 1783384621457
     },
     {
-      "id": "06ca4b3c-f523-439f-93f9-aa19b6d753bd",
-      "projectId": "N7KWzthm",
-      "sourceNodeId": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
-      "targetNodeId": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
-      "targetRefType": "same-project",
-      "targetRefString": "#/definitions/Pet",
-      "targetRefKind": "support",
-      "isValid": true,
-      "createdAt": 1783384621510,
-      "lastValidated": 1786634083031
-    },
-    {
       "id": "0faeabda-6c1b-42de-b78c-0fdc731c42fc",
       "projectId": "N7KWzthm",
       "sourceNodeId": "a1b842f9-e45e-4f3e-a478-239d8e4c1273:0",
@@ -257,7 +245,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1783384621558,
-      "lastValidated": 1784125946848
+      "lastValidated": 1786635687810
     },
     {
       "id": "24341abc-e924-4b03-a6ba-5bd455aaf688",
@@ -305,7 +293,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1784065939509,
-      "lastValidated": 1784125675685
+      "lastValidated": 1786637782110
     },
     {
       "id": "8e34b2b0-8b27-42a1-b536-8277be932a87",
@@ -330,18 +318,6 @@
       "isValid": true,
       "createdAt": 1783384621408,
       "lastValidated": 1786634083032
-    },
-    {
-      "id": "8f8a22e2-5c47-47f9-b1de-f35182d3ecc9",
-      "projectId": "N7KWzthm",
-      "sourceNodeId": "16d2b840-5408-48cb-9045-9bf0b0446b2f:0",
-      "targetNodeId": "a1b842f9-e45e-4f3e-a478-239d8e4c1273:0",
-      "targetRefType": "same-project",
-      "targetRefString": "PetStore:Swagger_Petstore:1.0.7",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1786634582319,
-      "lastValidated": 1786634582319
     },
     {
       "id": "9bb55efc-ad84-48d8-99f4-a7c9096caa1c",
@@ -392,18 +368,6 @@
       "lastValidated": 1786634197246
     },
     {
-      "id": "d0fdc2fa-2450-46a6-b0a6-295d1e15304d",
-      "projectId": "N7KWzthm",
-      "sourceNodeId": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
-      "targetNodeId": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
-      "targetRefType": "same-project",
-      "targetRefString": "#/definitions/Tag",
-      "targetRefKind": "support",
-      "isValid": true,
-      "createdAt": 1783384621510,
-      "lastValidated": 1786634083033
-    },
-    {
       "id": "d49a97ea-9f44-4d50-a2f6-cb44579e7c33",
       "projectId": "N7KWzthm",
       "sourceNodeId": "e1fddb3c-d836-4b5b-87af-a67908265299:0",
@@ -450,18 +414,6 @@
       "isValid": true,
       "createdAt": 1784066007732,
       "lastValidated": 1784066007732
-    },
-    {
-      "id": "f5963241-67fa-4f69-bb52-423044e6ae85",
-      "projectId": "N7KWzthm",
-      "sourceNodeId": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
-      "targetNodeId": "6507e72a-efba-4d2c-b083-7c376a7e6618:0",
-      "targetRefType": "same-project",
-      "targetRefString": "#/definitions/Category",
-      "targetRefKind": "support",
-      "isValid": true,
-      "createdAt": 1783384621510,
-      "lastValidated": 1786634083081
     },
     {
       "id": "fcc7a9b8-6636-4741-9175-93d8b219312c",

@@ -24,3 +24,23 @@ spec:
                 method: get
         withAssemblyRateLimit: []
         withRateLimit: []
+    webm-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        pricing:
+          value: 0
+          currency: ''
+    dp-nano-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        apis:
+          - $ref: PetStore:Swagger_Petstore:1.0.7
+            operations:
+              - path: /pet/{petId}
+                method: get
+          - $ref: PetStore3:SwaggerPetstore-OpenAPI30:1.0.27
+            operations:
+              - path: /pet/{petId}
+                method: get
+  termsOfService: ''
+  license: ''
