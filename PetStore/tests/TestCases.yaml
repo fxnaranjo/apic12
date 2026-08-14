@@ -7,7 +7,8 @@ metadata:
   tags: []
 spec:
   api:
-    $ref: PetStore:Swagger_Petstore:1.0.7
+    $endpoint: >-
+      https://d-dev5237079.a-vir-s2.apiconnect.ipaas.ibmappdomain.cloud/dev5237079/fxn-catalog/v2
   request:
     - method: GET
       resource: /pet/{petId}
