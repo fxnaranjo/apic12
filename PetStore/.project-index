@@ -20,13 +20,13 @@
       "filePath": "PetStore/tests/TestCases.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1786733621373,
+      "lastIndexed": 1786733784343,
       "schemaVersion": 1,
       "kind": "test",
       "name": "TestCases",
       "namespace": "PetStore",
       "version": "1.0",
-      "contentHash": "9225f7f29f1bd542"
+      "contentHash": "2262cee562a97301"
     },
     {
       "id": "21cab915-396c-47bf-b6bf-0a5f81e2fa0a:0",

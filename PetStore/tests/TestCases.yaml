@@ -7,11 +7,10 @@ metadata:
   tags: []
 spec:
   api:
-    $endpoint: >-
-      https://d-dev5237079.a-vir-s2.apiconnect.ipaas.ibmappdomain.cloud/dev5237079/fxn-catalog/v2
+    $endpoint: ''
   request:
     - method: GET
-      resource: /pet/x
+      resource: /pet/{petId}
       headers:
         - key: accept
           value: application/json
