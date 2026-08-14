@@ -20,13 +20,13 @@
       "filePath": "PetStore/tests/TestCases.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1786733784343,
+      "lastIndexed": 1786733858038,
       "schemaVersion": 1,
       "kind": "test",
       "name": "TestCases",
       "namespace": "PetStore",
       "version": "1.0",
-      "contentHash": "2262cee562a97301"
+      "contentHash": "f5cf57ead245ee83"
     },
     {
       "id": "21cab915-396c-47bf-b6bf-0a5f81e2fa0a:0",
@@ -230,6 +230,18 @@
       "isValid": true,
       "createdAt": 1784065915865,
       "lastValidated": 1784065915865
+    },
+    {
+      "id": "517137a8-9385-4963-97b7-0c351763752b",
+      "projectId": "N7KWzthm",
+      "sourceNodeId": "16d2b840-5408-48cb-9045-9bf0b0446b2f:0",
+      "targetNodeId": "a1b842f9-e45e-4f3e-a478-239d8e4c1273:0",
+      "targetRefType": "same-project",
+      "targetRefString": "PetStore:Swagger_Petstore:1.0.7",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1786733858050,
+      "lastValidated": 1786733858050
     },
     {
       "id": "5cbde81b-fce5-46a3-97fd-2064b9821a8d",
