@@ -19,43 +19,9 @@ spec:
     stopOnFail: false
   - name: Validate response schema
     key: responseBody
-    value:
-      required:
-        - name
-        - photoUrls
-      type: object
-      properties:
-        id:
-          type: integer
-        name:
-          type: string
-        category:
-          type: object
-          properties:
-            id:
-              type: integer
-            name:
-              type: string
-        photoUrls:
-          type: array
-          items:
-            type: string
-        tags:
-          type: array
-          items:
-            type: object
-            properties:
-              id:
-                type: integer
-              name:
-                type: string
-        status:
-          type: string
-          description: pet status in the store
-          enum:
-            - available
-            - pending
-            - sold
+    value: >-
+      {"required":["name","photoUrls"],"type":"object","properties":{"id":{"type":"integer"},"name":{"type":"string"},"category":{"type":"object","properties":{"id":{"type":"integer"},"name":{"type":"string"}}},"photoUrls":{"type":"array","items":{"type":"string"}},"tags":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer"},"name":{"type":"string"}}}},"status":{"type":"string","description":"pet
+      status in the store","enum":["available","pending","sold"]}}}
     action: validateSchema
     stopOnFail: false
   - name: 'Validate required property: name'

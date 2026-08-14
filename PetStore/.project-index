@@ -20,13 +20,13 @@
       "filePath": "PetStore/tests/TestCases.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1786634633927,
+      "lastIndexed": 1786733621373,
       "schemaVersion": 1,
       "kind": "test",
       "name": "TestCases",
       "namespace": "PetStore",
       "version": "1.0",
-      "contentHash": "1b7c661fc932fd61"
+      "contentHash": "9225f7f29f1bd542"
     },
     {
       "id": "21cab915-396c-47bf-b6bf-0a5f81e2fa0a:0",
@@ -61,32 +61,18 @@
       "schemaVersion": 1
     },
     {
-      "id": "6767b447-503c-4838-aa88-9efcf2dfebe0:0",
-      "projectId": "N7KWzthm",
-      "filePath": "PetStore/tests/assertions/GET-pet-0-invalid-404.yml",
-      "docIndex": 0,
-      "assetType": "resource",
-      "lastIndexed": 1786634138805,
-      "schemaVersion": 1,
-      "kind": "assertion",
-      "name": "GET-pet-0-invalid-404",
-      "namespace": "PetStore",
-      "version": "1.0",
-      "contentHash": "704e7b9d161d3dbf"
-    },
-    {
       "id": "7b239f08-f815-44e3-a4df-cbf921c4c5f4:0",
       "projectId": "N7KWzthm",
       "filePath": "PetStore/PetProduct.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1784065939506,
+      "lastIndexed": 1786732563858,
       "schemaVersion": 1,
       "kind": "Product",
       "name": "PetProduct",
       "namespace": "PetStore",
-      "version": "1.0",
-      "contentHash": "a9dc6618e71f71a4"
+      "version": "2.0",
+      "contentHash": "2d746a4b6a44533a"
     },
     {
       "id": "7b3d05e7-f844-435f-b150-42ebf612cf2f:0",
@@ -94,13 +80,13 @@
       "filePath": "PetStore/tests/assertions/GET-pet-0-200.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1786634137624,
+      "lastIndexed": 1786732802521,
       "schemaVersion": 1,
       "kind": "assertion",
       "name": "GET-pet-0-200",
       "namespace": "PetStore",
       "version": "1.0",
-      "contentHash": "584ca20fddcaeb23"
+      "contentHash": "ccadb47ce4f80d7f"
     },
     {
       "id": "9a47675c-c6cc-4f20-b46a-08c6d3fbbe99:0",
@@ -108,13 +94,13 @@
       "filePath": "PetStore/PetPolicy.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1786635687791,
+      "lastIndexed": 1786733281149,
       "schemaVersion": 1,
       "kind": "DataPowerAssembly",
       "name": "PetPolicy",
       "namespace": "PetStore",
       "version": "1.0",
-      "contentHash": "539d3912041bbeee"
+      "contentHash": "33b70cf88b2bfa50"
     },
     {
       "id": "9ed0dc81-41e3-483b-a584-76abf22f51ec:0",
@@ -157,20 +143,6 @@
       "namespace": "PetStore",
       "version": "1.0",
       "contentHash": "a9badab97d1d5c50"
-    },
-    {
-      "id": "cd758bef-8707-4f23-b29a-0bd520c7d6cf:0",
-      "projectId": "N7KWzthm",
-      "filePath": "PetStore/tests/assertions/GET-pet-0-400.yml",
-      "docIndex": 0,
-      "assetType": "resource",
-      "lastIndexed": 1786634138305,
-      "schemaVersion": 1,
-      "kind": "assertion",
-      "name": "GET-pet-0-400",
-      "namespace": "PetStore",
-      "version": "1.0",
-      "contentHash": "c6aea038ddc13474"
     },
     {
       "id": "e1fddb3c-d836-4b5b-87af-a67908265299:0",
@@ -245,31 +217,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1783384621558,
-      "lastValidated": 1786635687810
-    },
-    {
-      "id": "24341abc-e924-4b03-a6ba-5bd455aaf688",
-      "projectId": "N7KWzthm",
-      "sourceNodeId": "16d2b840-5408-48cb-9045-9bf0b0446b2f:0",
-      "targetNodeId": "6767b447-503c-4838-aa88-9efcf2dfebe0:0",
-      "targetRefType": "same-project",
-      "targetRefString": "PetStore:GET-pet-0-invalid-404:1.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1786634139435,
-      "lastValidated": 1786634139435
-    },
-    {
-      "id": "2fc5e8e1-89b7-4987-b56f-207ed0d130ef",
-      "projectId": "N7KWzthm",
-      "sourceNodeId": "16d2b840-5408-48cb-9045-9bf0b0446b2f:0",
-      "targetNodeId": "cd758bef-8707-4f23-b29a-0bd520c7d6cf:0",
-      "targetRefType": "same-project",
-      "targetRefString": "PetStore:GET-pet-0-400:1.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1786634139435,
-      "lastValidated": 1786634139435
+      "lastValidated": 1786733281156
     },
     {
       "id": "4e1b331b-0c25-468b-b2bc-463e4f0866d4",
@@ -353,7 +301,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1786634139435,
-      "lastValidated": 1786634139435
+      "lastValidated": 1786732802529
     },
     {
       "id": "c13a291e-cb84-4846-90d0-0c7a134a10a1",

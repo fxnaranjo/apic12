@@ -7,37 +7,28 @@ metadata:
   tags: []
 spec:
   api:
-    $endpoint: ''
+    $endpoint: >-
+      https://d-dev5237079.a-vir-s2.apiconnect.ipaas.ibmappdomain.cloud/dev5237079/fxn-catalog/v2
   request:
     - method: GET
-      resource: /pet/{petId}
+      resource: /pet/x
       headers:
         - key: accept
           value: application/json
-      parameters: []
       assertions:
         $ref: PetStore:GET-pet-0-200:1.0
     - method: GET
-      resource: /pet/0
+      resource: /pet/2
       headers:
         - key: accept
           value: application/json
-      parameters: []
-      assertions:
-        $ref: PetStore:GET-pet-0-400:1.0
       payload:
         raw:
           json: |-
             {
               "key": "invalid payload"
             }
-    - method: GET
-      resource: /pet/0/invalid
-      headers:
-        - key: accept
-          value: application/json
-      parameters: []
       assertions:
-        $ref: PetStore:GET-pet-0-invalid-404:1.0
+        - $ref: PetStore:GET-pet-0-200:1.0
   environment:
     - $ref: PetStore:FxnEnv:1.0

@@ -106,5 +106,4 @@ securityDefinitions:
     in: header
     description: ''
     type: apiKey
-security:
-  - api-key: []
+security: []
