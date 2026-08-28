@@ -18,5 +18,6 @@ projects:
   DPNano_Weather:
     id: gqvc5bTu
     description: ''
-    tags: []
-    lastUpdated: 1787877071977
+    tags:
+      - nano
+    lastUpdated: 1787877093973
