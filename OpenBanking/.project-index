@@ -57,13 +57,13 @@
       "filePath": "OpenBanking/openbank-product.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1783528554156,
+      "lastIndexed": 1787926266288,
       "schemaVersion": 1,
       "kind": "Product",
       "name": "openbank-product",
       "namespace": "OpenBanking",
       "version": "1.0",
-      "contentHash": "19ac172551c721d8"
+      "contentHash": "54afd08f80c9fa33"
     },
     {
       "id": "a66fc648-be30-4bdb-b164-607d7fdf6c81:0",
@@ -71,13 +71,13 @@
       "filePath": "OpenBanking/openbank-plan.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1784066768253,
+      "lastIndexed": 1787926077813,
       "schemaVersion": 1,
       "kind": "Plan",
       "name": "openbank-plan",
       "namespace": "OpenBanking",
       "version": "1.0",
-      "contentHash": "108a0bf5554bb831"
+      "contentHash": "0ec124f8af30e1d2"
     },
     {
       "id": "d8ffe8f0-7520-404e-95e1-e1ea1b416830:0",
@@ -136,13 +136,13 @@
       "filePath": "OpenBanking/OpenBanking.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1783384624423,
+      "lastIndexed": 1787926260592,
       "schemaVersion": 1,
       "kind": "API",
       "name": "OpenBanking",
       "namespace": "OpenBanking",
-      "version": "1",
-      "contentHash": "2c3de84950adad91"
+      "version": "1.0",
+      "contentHash": "333566bfe609c505"
     }
   ],
   "edges": [
@@ -157,18 +157,6 @@
       "isValid": true,
       "createdAt": 1783384621161,
       "lastValidated": 1783384621230
-    },
-    {
-      "id": "1fe17610-d9c0-42b7-881e-e33be11820d4",
-      "projectId": "hZS46UBt",
-      "sourceNodeId": "a66fc648-be30-4bdb-b164-607d7fdf6c81:0",
-      "targetNodeId": "f000e750-476d-4e28-90bb-35c7d28aa2dc:0",
-      "targetRefType": "same-project",
-      "targetRefString": "OpenBanking:OpenBanking:1",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1784066768255,
-      "lastValidated": 1784066768255
     },
     {
       "id": "32cece48-9e2e-440a-baca-2323767a991b",
@@ -195,16 +183,16 @@
       "lastValidated": 1783384621232
     },
     {
-      "id": "8dde8e2e-a3b2-47b3-9d49-fafc369deb55",
+      "id": "88ebbc9f-d4f4-402e-954e-3069c1651b2c",
       "projectId": "hZS46UBt",
       "sourceNodeId": "9630a0d7-b405-419c-a160-7a5078b638f3:0",
       "targetNodeId": "f000e750-476d-4e28-90bb-35c7d28aa2dc:0",
       "targetRefType": "same-project",
-      "targetRefString": "OpenBanking:OpenBanking:1",
+      "targetRefString": "OpenBanking:OpenBanking:1.0",
       "targetRefKind": "resource",
       "isValid": true,
-      "createdAt": 1783386823304,
-      "lastValidated": 1783386823304
+      "createdAt": 1787926266289,
+      "lastValidated": 1787926266289
     },
     {
       "id": "a7ffff84-f1d9-4119-b691-000944480336",

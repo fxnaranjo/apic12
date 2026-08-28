@@ -2,8 +2,8 @@ kind: API
 apiVersion: api.ibm.com/v1
 metadata:
   name: OpenBanking
+  version: '1.0'
   namespace: OpenBanking
-  version: '1'
   tags: []
   type: REST
 spec:

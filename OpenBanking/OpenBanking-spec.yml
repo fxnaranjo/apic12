@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: OpenBanking
-  version: 1.0.0
+  version: '1.0'
   description: OpenBanking
 servers:
   - url: /openbanking/v1
