@@ -1,0 +1,18 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: weather_nano_product
+  namespace: DPNano_Weather
+  version: '1.0'
+  tags: []
+spec:
+  apis:
+    - $ref: DPNano_Weather:weatherapi_nano:2
+  plans: []
+  extensions:
+    dp-nano-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        replicas: 1
+        api-set:
+          isEnabled: false

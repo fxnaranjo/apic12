@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: weatherapi_nano
+  version: '2'
+  namespace: DPNano_Weather
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./weatherapi_nano-spec.json
+  policy-sequence:
+    - $ref: DPNano_Weather:weather_policy:1.0

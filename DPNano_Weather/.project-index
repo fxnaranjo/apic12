@@ -1,0 +1,154 @@
+{
+  "nodes": [
+    {
+      "id": "12ad6a93-d115-4305-80f3-7434bb5656b1:0",
+      "projectId": "gqvc5bTu",
+      "filePath": "DPNano_Weather/weatherapi_nano.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1787876630056,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "weatherapi_nano",
+      "namespace": "DPNano_Weather",
+      "version": "2",
+      "contentHash": "f6425edd09a43901"
+    },
+    {
+      "id": "16264346-cd38-4606-8295-175b44f5d905:0",
+      "projectId": "gqvc5bTu",
+      "filePath": "DPNano_Weather/invoke-weather_policy.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1787876787030,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "invoke-weather_policy",
+      "namespace": "DPNano_Weather",
+      "version": "1.0",
+      "contentHash": "1b9ee23e17e46182"
+    },
+    {
+      "id": "222d1646-2c49-48e1-9172-4ec028961c72:0",
+      "projectId": "gqvc5bTu",
+      "filePath": "DPNano_Weather/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1787875844777,
+      "schemaVersion": 1
+    },
+    {
+      "id": "7531af99-9c35-450a-82e5-87267a884d65:0",
+      "projectId": "gqvc5bTu",
+      "filePath": "DPNano_Weather/Weather_Nano_Product.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1787876814890,
+      "schemaVersion": 1,
+      "kind": "Product",
+      "name": "weather_nano_product",
+      "namespace": "DPNano_Weather",
+      "version": "1.0",
+      "contentHash": "4afaec10cfa3a58b"
+    },
+    {
+      "id": "805f4a5c-7ae2-4f82-ab6e-e5be40d54955:0",
+      "projectId": "gqvc5bTu",
+      "filePath": "DPNano_Weather/weather_policy.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1787876629567,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "weather_policy",
+      "namespace": "DPNano_Weather",
+      "version": "1.0",
+      "contentHash": "c92ede9ebdff573e"
+    },
+    {
+      "id": "81642468-f96d-4199-b5de-8f40ba461ab0:0",
+      "projectId": "gqvc5bTu",
+      "filePath": "DPNano_Weather/weatherapi_nano-spec.json",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1787875862450,
+      "schemaVersion": 1
+    },
+    {
+      "id": "cdfab790-96ff-47bd-b756-a22875998c0a:0",
+      "projectId": "gqvc5bTu",
+      "filePath": "DPNano_Weather/telemetry-weather_policy.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1787876629148,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-weather_policy",
+      "namespace": "DPNano_Weather",
+      "version": "1.0",
+      "contentHash": "9549a6db9ee1511c"
+    }
+  ],
+  "edges": [
+    {
+      "id": "2f9568ba-ed93-4441-ad43-b1e4431be522",
+      "projectId": "gqvc5bTu",
+      "sourceNodeId": "7531af99-9c35-450a-82e5-87267a884d65:0",
+      "targetNodeId": "12ad6a93-d115-4305-80f3-7434bb5656b1:0",
+      "targetRefType": "same-project",
+      "targetRefString": "DPNano_Weather:weatherapi_nano:2",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1787876702820,
+      "lastValidated": 1787876702820
+    },
+    {
+      "id": "5af3b310-1f7d-4804-b81e-96eb22407b3b",
+      "projectId": "gqvc5bTu",
+      "sourceNodeId": "805f4a5c-7ae2-4f82-ab6e-e5be40d54955:0",
+      "targetNodeId": "16264346-cd38-4606-8295-175b44f5d905:0",
+      "targetRefType": "same-project",
+      "targetRefString": "DPNano_Weather:invoke-weather_policy:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1787876629574,
+      "lastValidated": 1787876787036
+    },
+    {
+      "id": "c4d70946-03e9-4a9d-8c34-5f3247187bad",
+      "projectId": "gqvc5bTu",
+      "sourceNodeId": "12ad6a93-d115-4305-80f3-7434bb5656b1:0",
+      "targetNodeId": "81642468-f96d-4199-b5de-8f40ba461ab0:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./weatherapi_nano-spec.json",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1787875863451,
+      "lastValidated": 1787875863451
+    },
+    {
+      "id": "f18207c0-33d5-488e-9b5b-d275a687f2e6",
+      "projectId": "gqvc5bTu",
+      "sourceNodeId": "805f4a5c-7ae2-4f82-ab6e-e5be40d54955:0",
+      "targetNodeId": "cdfab790-96ff-47bd-b756-a22875998c0a:0",
+      "targetRefType": "same-project",
+      "targetRefString": "DPNano_Weather:telemetry-weather_policy:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1787876629574,
+      "lastValidated": 1787876629574
+    },
+    {
+      "id": "f2e8925f-fc9a-4fd2-8f4d-270186bb3ce3",
+      "projectId": "gqvc5bTu",
+      "sourceNodeId": "12ad6a93-d115-4305-80f3-7434bb5656b1:0",
+      "targetNodeId": "805f4a5c-7ae2-4f82-ab6e-e5be40d54955:0",
+      "targetRefType": "same-project",
+      "targetRefString": "DPNano_Weather:weather_policy:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1787876630059,
+      "lastValidated": 1787876630059
+    }
+  ]
+}

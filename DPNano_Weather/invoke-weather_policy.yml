@@ -1,0 +1,23 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: invoke-weather_policy
+  namespace: DPNano_Weather
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  endpoint:
+    http:
+      target:
+        persistentConnections: false
+        timeout: 30
+        url: >-
+          https://sample-api.eu-west-a.apiconnect.automation.ibm.com/environment/air-temperature
+        decompressResponse: false
+        followRedirects: false
+        chunkedUpload: false
+        tlsClientProfile: tls-client-profile-catalog-default:1.0.0
+      verb: GET
