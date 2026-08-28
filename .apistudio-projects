@@ -2,8 +2,9 @@ projects:
   PetStore:
     id: N7KWzthm
     description: ''
-    tags: []
-    lastUpdated: 1784125970227
+    tags:
+      - gwv6
+    lastUpdated: 1787877118958
   OpenBanking:
     id: hZS46UBt
     description: ''
