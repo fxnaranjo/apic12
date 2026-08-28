@@ -20,7 +20,7 @@
       "filePath": "DPNano_Weather/invoke-weather_policy.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1787876787030,
+      "lastIndexed": 1787877464835,
       "schemaVersion": 1,
       "kind": "Invoke",
       "name": "invoke-weather_policy",
@@ -112,7 +112,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1787876629574,
-      "lastValidated": 1787876787036
+      "lastValidated": 1787877464841
     },
     {
       "id": "c4d70946-03e9-4a9d-8c34-5f3247187bad",
