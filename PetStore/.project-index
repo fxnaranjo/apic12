@@ -94,13 +94,13 @@
       "filePath": "PetStore/PetPolicy.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1786733281149,
+      "lastIndexed": 1787878410083,
       "schemaVersion": 1,
       "kind": "DataPowerAssembly",
       "name": "PetPolicy",
       "namespace": "PetStore",
       "version": "1.0",
-      "contentHash": "33b70cf88b2bfa50"
+      "contentHash": "9af793cdb3c6d402"
     },
     {
       "id": "9ed0dc81-41e3-483b-a584-76abf22f51ec:0",
@@ -173,13 +173,13 @@
       "filePath": "PetStore/PetPolicy3.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1783966258252,
+      "lastIndexed": 1787878366173,
       "schemaVersion": 1,
       "kind": "DataPowerAssembly",
       "name": "PetPolicy3",
       "namespace": "PetStore3",
       "version": "1.0",
-      "contentHash": "9eec1ec6c925cc6f"
+      "contentHash": "42e17fe867bc5ca1"
     }
   ],
   "edges": [
@@ -217,7 +217,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1783384621558,
-      "lastValidated": 1786733281156
+      "lastValidated": 1787878410231
     },
     {
       "id": "4e1b331b-0c25-468b-b2bc-463e4f0866d4",
@@ -289,7 +289,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1783384621457,
-      "lastValidated": 1783966258258
+      "lastValidated": 1787878366184
     },
     {
       "id": "ac8ee81c-343d-4a65-a4e9-7a2fd4bacf7a",

@@ -46,3 +46,4 @@ spec:
       enabled: true
       success-content: activity
       error-content: payload
+    buffering: true
