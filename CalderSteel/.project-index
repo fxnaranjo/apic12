@@ -29,6 +29,20 @@
       "contentHash": "48faae92f9bc8a64"
     },
     {
+      "id": "0a1d4ac0-4efb-4bed-baf7-f1ba3a1f37c8:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/DevicesPlan.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1790887014396,
+      "schemaVersion": 1,
+      "kind": "Plan",
+      "name": "DevicesPlan",
+      "namespace": "CalderSteel",
+      "version": "1.0",
+      "contentHash": "69c1cc99651befe3"
+    },
+    {
       "id": "395c4ef1-6c52-4ff5-ab0f-ef2beae2e7db:0",
       "projectId": "iwSh3M9Y",
       "filePath": "CalderSteel/invoke-ComputerPart_PolicySequence.yml",
@@ -66,6 +80,34 @@
       "contentHash": "49f4a4315a58e2bd"
     },
     {
+      "id": "8ff46b73-e61d-4b83-ab0f-cefe95d0df85:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/invoke-Devices_PolicySequence.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1790887077382,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "invoke-Devices_PolicySequence",
+      "namespace": "CalderSteel",
+      "version": "1.0",
+      "contentHash": "7d92e34f8ccfb4eb"
+    },
+    {
+      "id": "979a5359-300a-4e62-9cce-7df31771a283:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/Device_Telemetry_API_Server.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1790886952105,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "Device_Telemetry_API_Server",
+      "namespace": "CalderSteel",
+      "version": "1.0.0",
+      "contentHash": "c7f5a45b8c580c85"
+    },
+    {
       "id": "9cf3c286-d531-4d6f-8103-97f38a23fbb0:0",
       "projectId": "iwSh3M9Y",
       "filePath": "CalderSteel/ComputerPart_PolicySequence.yml",
@@ -78,6 +120,34 @@
       "namespace": "CalderSteel",
       "version": "1.0",
       "contentHash": "24b1fc0f1a429e29"
+    },
+    {
+      "id": "9ffd9f30-4795-40d7-ab6b-3e17690472c1:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/devices_product.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1790887031609,
+      "schemaVersion": 1,
+      "kind": "Product",
+      "name": "devices_product",
+      "namespace": "CalderSteel",
+      "version": "1.0",
+      "contentHash": "75ea68ea9d40ee51"
+    },
+    {
+      "id": "a37df0aa-d75c-49cf-a3e7-eb92b8c5f310:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/telemetry-Devices_PolicySequence.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1790886951227,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-Devices_PolicySequence",
+      "namespace": "CalderSteel",
+      "version": "1.0",
+      "contentHash": "6a3390a35a820ec3"
     },
     {
       "id": "a601fe1c-ce23-48da-8b15-5da9d0fb3216:0",
@@ -101,9 +171,56 @@
       "assetType": "support",
       "lastIndexed": 1790873296910,
       "schemaVersion": 1
+    },
+    {
+      "id": "ec4e8c1a-3ac5-4f45-abca-210070ab0fbd:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/device_telemetry_api_server-spec.json",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1790886819514,
+      "schemaVersion": 1
+    },
+    {
+      "id": "f59ab58e-1ec4-4ea7-9cd4-1cc139657e39:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/Devices_PolicySequence.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1790886951612,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "Devices_PolicySequence",
+      "namespace": "CalderSteel",
+      "version": "1.0",
+      "contentHash": "65bc216ac238ebfd"
     }
   ],
   "edges": [
+    {
+      "id": "08c6f52b-910b-4dea-832c-8a9b44e46c03",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "979a5359-300a-4e62-9cce-7df31771a283:0",
+      "targetNodeId": "ec4e8c1a-3ac5-4f45-abca-210070ab0fbd:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./device_telemetry_api_server-spec.json",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1790886821334,
+      "lastValidated": 1790886821334
+    },
+    {
+      "id": "1e6c1fc0-d01e-469e-a9c0-9c4fdd9d1afa",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "f59ab58e-1ec4-4ea7-9cd4-1cc139657e39:0",
+      "targetNodeId": "8ff46b73-e61d-4b83-ab0f-cefe95d0df85:0",
+      "targetRefType": "same-project",
+      "targetRefString": "CalderSteel:invoke-Devices_PolicySequence:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1790886951614,
+      "lastValidated": 1790887077391
+    },
     {
       "id": "5db1e0ad-2c2c-4ac3-b816-4994f66d0ec8",
       "projectId": "iwSh3M9Y",
@@ -129,6 +246,30 @@
       "lastValidated": 1790874994416
     },
     {
+      "id": "8e9d1962-1490-401b-8bc3-508d5cb53a0a",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "9ffd9f30-4795-40d7-ab6b-3e17690472c1:0",
+      "targetNodeId": "979a5359-300a-4e62-9cce-7df31771a283:0",
+      "targetRefType": "same-project",
+      "targetRefString": "CalderSteel:Device_Telemetry_API_Server:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1790886990484,
+      "lastValidated": 1790886990484
+    },
+    {
+      "id": "9e13c3c7-02a1-466e-858e-70eeb42fa541",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "f59ab58e-1ec4-4ea7-9cd4-1cc139657e39:0",
+      "targetNodeId": "a37df0aa-d75c-49cf-a3e7-eb92b8c5f310:0",
+      "targetRefType": "same-project",
+      "targetRefString": "CalderSteel:telemetry-Devices_PolicySequence:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1790886951614,
+      "lastValidated": 1790886951614
+    },
+    {
       "id": "b772d0b5-3f9c-4a0b-b755-28bb7b3ba771",
       "projectId": "iwSh3M9Y",
       "sourceNodeId": "73e03918-5576-4fcd-a861-d0b690e7dc90:0",
@@ -151,6 +292,30 @@
       "isValid": true,
       "createdAt": 1790873481018,
       "lastValidated": 1790873514476
+    },
+    {
+      "id": "c76364ab-c831-434f-8f4f-5c203d3d954b",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "9ffd9f30-4795-40d7-ab6b-3e17690472c1:0",
+      "targetNodeId": "0a1d4ac0-4efb-4bed-baf7-f1ba3a1f37c8:0",
+      "targetRefType": "same-project",
+      "targetRefString": "CalderSteel:DevicesPlan:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1790887015474,
+      "lastValidated": 1790887015474
+    },
+    {
+      "id": "e22e0c80-9c3f-4094-8198-2e03ff396e02",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "979a5359-300a-4e62-9cce-7df31771a283:0",
+      "targetNodeId": "f59ab58e-1ec4-4ea7-9cd4-1cc139657e39:0",
+      "targetRefType": "same-project",
+      "targetRefString": "CalderSteel:Devices_PolicySequence:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1790886952106,
+      "lastValidated": 1790886952106
     },
     {
       "id": "e6961216-71a8-4eb6-9f98-b668b268f882",

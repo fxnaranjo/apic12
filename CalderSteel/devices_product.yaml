@@ -1,0 +1,19 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: devices_product
+  namespace: CalderSteel
+  version: '1.0'
+  tags: []
+spec:
+  apis:
+    - $ref: CalderSteel:Device_Telemetry_API_Server:1.0.0
+  plans:
+    - $ref: CalderSteel:DevicesPlan:1.0
+  extensions:
+    dp-nano-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        replicas: 1
+        api-set:
+          isEnabled: false

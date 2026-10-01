@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Device_Telemetry_API_Server
+  version: 1.0.0
+  namespace: CalderSteel
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./device_telemetry_api_server-spec.json
+  policy-sequence:
+    - $ref: CalderSteel:Devices_PolicySequence:1.0

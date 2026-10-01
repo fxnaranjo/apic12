@@ -1,0 +1,15 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Devices_PolicySequence
+  namespace: CalderSteel
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: CalderSteel:invoke-Devices_PolicySequence:1.0
+  monitoring:
+    $ref: CalderSteel:telemetry-Devices_PolicySequence:1.0
