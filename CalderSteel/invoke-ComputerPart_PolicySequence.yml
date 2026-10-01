@@ -1,0 +1,22 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: invoke-ComputerPart_PolicySequence
+  namespace: CalderSteel
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  endpoint:
+    http:
+      target:
+        persistentConnections: false
+        timeout: 30
+        url: >-
+          'https://fxn-pc-fxnpc.apps.itz-ymik1h.infra01-lb.wdc07.techzone.ibm.com'
+          & $relativeUrl('request')
+        decompressResponse: false
+        followRedirects: false
+        chunkedUpload: false

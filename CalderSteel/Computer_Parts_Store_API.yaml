@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Computer_Parts_Store_API
+  version: 1.0.0
+  namespace: CalderSteel
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./computer_parts_store_api-spec.json
+  policy-sequence:
+    - $ref: CalderSteel:ComputerPart_PolicySequence:1.0

@@ -1,0 +1,180 @@
+{
+  "nodes": [
+    {
+      "id": "01831295-96c5-4b01-9c6e-4bbb5c28f0e3:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/telemetry-ComputerPart_PolicySequence.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1790873358265,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-ComputerPart_PolicySequence",
+      "namespace": "CalderSteel",
+      "version": "1.0",
+      "contentHash": "81488f969f4e586e"
+    },
+    {
+      "id": "0556382a-7e8e-4681-9ddf-64d86574f969:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/ComputerParts_Product.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1790873497749,
+      "schemaVersion": 1,
+      "kind": "Product",
+      "name": "ComputerParts_Product",
+      "namespace": "CalderSteel",
+      "version": "1.0",
+      "contentHash": "37044a7d93b05815"
+    },
+    {
+      "id": "395c4ef1-6c52-4ff5-ab0f-ef2beae2e7db:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/invoke-ComputerPart_PolicySequence.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1790873428823,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "invoke-ComputerPart_PolicySequence",
+      "namespace": "CalderSteel",
+      "version": "1.0",
+      "contentHash": "6381a8e8f704eeeb"
+    },
+    {
+      "id": "3b300c88-9153-440a-a01c-03cc0eabd9d7:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/computer_parts_store_api-spec.json",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1790873322273,
+      "schemaVersion": 1
+    },
+    {
+      "id": "73e03918-5576-4fcd-a861-d0b690e7dc90:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/Computer_Parts_Store_API.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1790873359235,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "Computer_Parts_Store_API",
+      "namespace": "CalderSteel",
+      "version": "1.0.0",
+      "contentHash": "49f4a4315a58e2bd"
+    },
+    {
+      "id": "9cf3c286-d531-4d6f-8103-97f38a23fbb0:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/ComputerPart_PolicySequence.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1790873358725,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "ComputerPart_PolicySequence",
+      "namespace": "CalderSteel",
+      "version": "1.0",
+      "contentHash": "24b1fc0f1a429e29"
+    },
+    {
+      "id": "a601fe1c-ce23-48da-8b15-5da9d0fb3216:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/ComputerParts_Plan.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1790873514471,
+      "schemaVersion": 1,
+      "kind": "Plan",
+      "name": "ComputerParts_Plan",
+      "namespace": "CalderSteel",
+      "version": "1.0",
+      "contentHash": "ec90217047f736e1"
+    },
+    {
+      "id": "e092f51b-3bc3-46df-a7ce-3837bd527e6b:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1790873296910,
+      "schemaVersion": 1
+    }
+  ],
+  "edges": [
+    {
+      "id": "5db1e0ad-2c2c-4ac3-b816-4994f66d0ec8",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "73e03918-5576-4fcd-a861-d0b690e7dc90:0",
+      "targetNodeId": "3b300c88-9153-440a-a01c-03cc0eabd9d7:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./computer_parts_store_api-spec.json",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1790873323108,
+      "lastValidated": 1790873323108
+    },
+    {
+      "id": "6aa0d94d-18a2-4e57-ab3e-07741199cd43",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "9cf3c286-d531-4d6f-8103-97f38a23fbb0:0",
+      "targetNodeId": "395c4ef1-6c52-4ff5-ab0f-ef2beae2e7db:0",
+      "targetRefType": "same-project",
+      "targetRefString": "CalderSteel:invoke-ComputerPart_PolicySequence:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1790873358728,
+      "lastValidated": 1790873428826
+    },
+    {
+      "id": "b772d0b5-3f9c-4a0b-b755-28bb7b3ba771",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "73e03918-5576-4fcd-a861-d0b690e7dc90:0",
+      "targetNodeId": "9cf3c286-d531-4d6f-8103-97f38a23fbb0:0",
+      "targetRefType": "same-project",
+      "targetRefString": "CalderSteel:ComputerPart_PolicySequence:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1790873359245,
+      "lastValidated": 1790873359245
+    },
+    {
+      "id": "c2213be5-0e63-48b4-a432-870709f52c6a",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "0556382a-7e8e-4681-9ddf-64d86574f969:0",
+      "targetNodeId": "a601fe1c-ce23-48da-8b15-5da9d0fb3216:0",
+      "targetRefType": "same-project",
+      "targetRefString": "CalderSteel:ComputerParts_Plan:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1790873481018,
+      "lastValidated": 1790873514476
+    },
+    {
+      "id": "e6961216-71a8-4eb6-9f98-b668b268f882",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "0556382a-7e8e-4681-9ddf-64d86574f969:0",
+      "targetNodeId": "73e03918-5576-4fcd-a861-d0b690e7dc90:0",
+      "targetRefType": "same-project",
+      "targetRefString": "CalderSteel:Computer_Parts_Store_API:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1790873456107,
+      "lastValidated": 1790873456107
+    },
+    {
+      "id": "eb755047-ce96-43c9-ad10-ab675292fbac",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "9cf3c286-d531-4d6f-8103-97f38a23fbb0:0",
+      "targetNodeId": "01831295-96c5-4b01-9c6e-4bbb5c28f0e3:0",
+      "targetRefType": "same-project",
+      "targetRefString": "CalderSteel:telemetry-ComputerPart_PolicySequence:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1790873358728,
+      "lastValidated": 1790873358728
+    }
+  ]
+}

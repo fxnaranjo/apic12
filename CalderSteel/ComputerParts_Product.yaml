@@ -1,0 +1,19 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ComputerParts_Product
+  namespace: CalderSteel
+  version: '1.0'
+  tags: []
+spec:
+  apis:
+    - $ref: CalderSteel:Computer_Parts_Store_API:1.0.0
+  plans:
+    - $ref: CalderSteel:ComputerParts_Plan:1.0
+  extensions:
+    dp-nano-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        replicas: 1
+        api-set:
+          isEnabled: false
