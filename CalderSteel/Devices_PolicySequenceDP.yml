@@ -1,0 +1,55 @@
+kind: DataPowerAssembly
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Devices_PolicySequenceDP
+  namespace: CalderSteel
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - datapower
+spec:
+  x-ibm-configuration:
+    gateway: datapower-api-gateway
+    assembly:
+      execute:
+        - gatewayscript:
+            version: 2.0.0
+            title: gatewayscript
+            source: |-
+              var aux=  context.get("request.path");
+              var aux2=  context.get("request.parameters");
+
+              console.error('****************************');
+
+              console.error('AUX: '+aux);
+              console.error('AUX2: '+aux2);
+
+              console.error('****************************');
+        - invoke:
+            version: 2.3.0
+            title: invoke
+            backend-type: detect
+            header-control:
+              type: blocklist
+              values: []
+            parameter-control:
+              type: allowlist
+              values: []
+            http-version: HTTP/1.1
+            timeout: 60
+            verb: keep
+            chunked-uploads: true
+            persistent-connection: true
+            cache-response: protocol
+            cache-ttl: 900
+            websocket-upgrade: false
+            graphql-send-type: detect
+            target-url: >-
+              https://device-metrics-devices-api.apps.itz-ymik1h.infra01-lb.wdc07.techzone.ibm.com$(request.path)?$(request.querystring)
+            tls-profile: calder-steel-tls-client-profile:1.0.0
+    phase: realized
+    enforced: true
+    testable: true
+    cors:
+      enabled: true

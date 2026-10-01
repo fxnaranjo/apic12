@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://device-metrics-devices-api.apps.itz-ymik1h.infra01-lb.wdc07.techzone.ibm.com/api/v1",
+      "url": "/api/v1",
       "description": "Generated server url"
     }
   ],

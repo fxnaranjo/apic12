@@ -15,9 +15,10 @@ spec:
         persistentConnections: false
         timeout: 30
         url: >-
-          'https://device-metrics-devices-api.apps.itz-ymik1h.infra01-lb.wdc07.techzone.ibm.com'
+          'https://device-metrics-devices-api.apps.itz-ymik1h.infra01-lb.wdc07.techzone.ibm.com/api/v1'
           & $relativeUrl('request')
         decompressResponse: false
         followRedirects: false
         chunkedUpload: false
         urlType: jsonata
+        tlsClientProfile: nano-tls-client-profile:1.0.0

@@ -1,0 +1,12 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: devices_product_dp
+  namespace: CalderSteel
+  version: '1.0'
+  tags: []
+spec:
+  apis:
+    - $ref: CalderSteel:Device_Telemetry_DP:1.0.0
+  plans:
+    - $ref: CalderSteel:DevicesPlanDP:1.0
