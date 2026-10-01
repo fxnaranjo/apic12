@@ -20,13 +20,13 @@
       "filePath": "CalderSteel/ComputerParts_Product.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1790873497749,
+      "lastIndexed": 1790873614489,
       "schemaVersion": 1,
       "kind": "Product",
-      "name": "ComputerParts_Product",
+      "name": "computerparts_product",
       "namespace": "CalderSteel",
       "version": "1.0",
-      "contentHash": "37044a7d93b05815"
+      "contentHash": "48faae92f9bc8a64"
     },
     {
       "id": "395c4ef1-6c52-4ff5-ab0f-ef2beae2e7db:0",
@@ -34,13 +34,13 @@
       "filePath": "CalderSteel/invoke-ComputerPart_PolicySequence.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1790873428823,
+      "lastIndexed": 1790874994413,
       "schemaVersion": 1,
       "kind": "Invoke",
       "name": "invoke-ComputerPart_PolicySequence",
       "namespace": "CalderSteel",
       "version": "1.0",
-      "contentHash": "6381a8e8f704eeeb"
+      "contentHash": "1b99f0a0c6007d2a"
     },
     {
       "id": "3b300c88-9153-440a-a01c-03cc0eabd9d7:0",
@@ -126,7 +126,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1790873358728,
-      "lastValidated": 1790873428826
+      "lastValidated": 1790874994416
     },
     {
       "id": "b772d0b5-3f9c-4a0b-b755-28bb7b3ba771",

@@ -20,3 +20,5 @@ spec:
         decompressResponse: false
         followRedirects: false
         chunkedUpload: false
+        urlType: jsonata
+        tlsClientProfile: calder-steel-tls-client-profile:1.0.0

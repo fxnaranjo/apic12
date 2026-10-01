@@ -1,7 +1,7 @@
 kind: Product
 apiVersion: api.ibm.com/v1
 metadata:
-  name: ComputerParts_Product
+  name: computerparts_product
   namespace: CalderSteel
   version: '1.0'
   tags: []
