@@ -21,4 +21,4 @@ spec:
         followRedirects: false
         chunkedUpload: false
         urlType: jsonata
-        tlsClientProfile: nano-tls-client-profile:1.0.0
+        tlsClientProfile: calder-steel-tls-client-profile:1.0.0
