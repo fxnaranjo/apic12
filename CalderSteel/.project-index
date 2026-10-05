@@ -220,6 +220,20 @@
       "contentHash": "7d60313f5ddfcf53"
     },
     {
+      "id": "bd83f386-b969-48ff-8aea-be55c1cb544d:0",
+      "projectId": "iwSh3M9Y",
+      "filePath": "CalderSteel/LuaScript-aZOL5.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1791227770171,
+      "schemaVersion": 1,
+      "kind": "LuaScript",
+      "name": "LuaScript-aZOL5",
+      "namespace": "CalderSteel",
+      "version": "1.0",
+      "contentHash": "c5f875e18c8ebb27"
+    },
+    {
       "id": "c0671af7-8f40-4d02-8b95-b049bee595e2:0",
       "projectId": "iwSh3M9Y",
       "filePath": "CalderSteel/device_telemetry_dp-spec.json",
@@ -252,13 +266,13 @@
       "filePath": "CalderSteel/Devices_PolicySequence.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1790886951612,
+      "lastIndexed": 1791225088811,
       "schemaVersion": 1,
       "kind": "FreeFlowPolicySequence",
       "name": "Devices_PolicySequence",
       "namespace": "CalderSteel",
       "version": "1.0",
-      "contentHash": "65bc216ac238ebfd"
+      "contentHash": "2c5061174b7c1c5f"
     }
   ],
   "edges": [
@@ -321,6 +335,18 @@
       "isValid": true,
       "createdAt": 1790873358728,
       "lastValidated": 1790905287032
+    },
+    {
+      "id": "786f1a94-1dd2-4c36-860d-8c32cd0a5385",
+      "projectId": "iwSh3M9Y",
+      "sourceNodeId": "f59ab58e-1ec4-4ea7-9cd4-1cc139657e39:0",
+      "targetNodeId": "bd83f386-b969-48ff-8aea-be55c1cb544d:0",
+      "targetRefType": "same-project",
+      "targetRefString": "CalderSteel:LuaScript-aZOL5:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1791225088820,
+      "lastValidated": 1791227770178
     },
     {
       "id": "8781881c-35b2-4c67-86ca-152d8b6d7fc7",
@@ -428,7 +454,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1790886952106,
-      "lastValidated": 1790886952106
+      "lastValidated": 1791225088832
     },
     {
       "id": "e6961216-71a8-4eb6-9f98-b668b268f882",

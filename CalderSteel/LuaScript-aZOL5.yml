@@ -1,0 +1,13 @@
+kind: LuaScript
+apiVersion: api.ibm.com/v1
+metadata:
+  name: LuaScript-aZOL5
+  namespace: CalderSteel
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  source: |
+    console.error("Testing FXN!!!") 

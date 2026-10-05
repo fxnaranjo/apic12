@@ -10,6 +10,7 @@ metadata:
       - nano
 spec:
   main:
+    - $ref: CalderSteel:LuaScript-aZOL5:1.0
     - $ref: CalderSteel:invoke-Devices_PolicySequence:1.0
   monitoring:
     $ref: CalderSteel:telemetry-Devices_PolicySequence:1.0
