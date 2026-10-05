@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Device Telemetry API Server",
-    "description": "Production-ready, highly-optimized API Server for retrieving device sensor telemetry readings. Integrated with PostgreSQL, Spring Boot 3.3.4, and Maven.",
+    "description": "The Telemetry Metrics API provides secure, real-time and historical access to operational performance metrics for a steel manufacturing corporation. It enables authorized systems, dashboards, and analytics platforms to retrieve key production, quality, energy, maintenance, and safety indicators across plants, production lines, motors,cutters,ovens, balances and gears.",
     "version": "1.0.0"
   },
   "servers": [
