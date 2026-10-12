@@ -13,3 +13,4 @@ spec:
     - $ref: CalderSteel:invoke-ComputerPart_PolicySequence:1.0
   monitoring:
     $ref: CalderSteel:telemetry-ComputerPart_PolicySequence:1.0
+  error: []

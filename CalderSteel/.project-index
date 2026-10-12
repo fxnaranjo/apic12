@@ -155,13 +155,13 @@
       "filePath": "CalderSteel/ComputerPart_PolicySequence.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1790873358725,
+      "lastIndexed": 1791823608207,
       "schemaVersion": 1,
       "kind": "FreeFlowPolicySequence",
       "name": "ComputerPart_PolicySequence",
       "namespace": "CalderSteel",
       "version": "1.0",
-      "contentHash": "24b1fc0f1a429e29"
+      "contentHash": "f1da540276c3173b"
     },
     {
       "id": "9ffd9f30-4795-40d7-ab6b-3e17690472c1:0",
@@ -211,7 +211,7 @@
       "filePath": "CalderSteel/Devices_PolicySequenceDP.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1790905313066,
+      "lastIndexed": 1791824057895,
       "schemaVersion": 1,
       "kind": "DataPowerAssembly",
       "name": "Devices_PolicySequenceDP",
@@ -382,7 +382,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1790888289352,
-      "lastValidated": 1790905313073
+      "lastValidated": 1791824057913
     },
     {
       "id": "9e13c3c7-02a1-466e-858e-70eeb42fa541",
@@ -418,7 +418,7 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1790873359245,
-      "lastValidated": 1790873359245
+      "lastValidated": 1791823608214
     },
     {
       "id": "c2213be5-0e63-48b4-a432-870709f52c6a",
