@@ -1,0 +1,154 @@
+{
+  "nodes": [
+    {
+      "id": "20e99f69-ff09-4d39-b9af-127c0c04d893:0",
+      "projectId": "l2CcBhlp",
+      "filePath": "Dillards/client-api-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792518035083,
+      "schemaVersion": 1
+    },
+    {
+      "id": "6fd2b071-ef6f-4607-9d32-430d2ed287e8:0",
+      "projectId": "l2CcBhlp",
+      "filePath": "Dillards/Client-API-PolicySequence.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792545020315,
+      "schemaVersion": 1,
+      "kind": "DataPowerAssembly",
+      "name": "Client-API-PolicySequence",
+      "namespace": "Dillards",
+      "version": "1.0",
+      "contentHash": "b053369365d35f10"
+    },
+    {
+      "id": "70be1290-4c58-42e1-a179-3ad19adcea6a:0",
+      "projectId": "l2CcBhlp",
+      "filePath": "Dillards/Client-API-Plan.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792518318566,
+      "schemaVersion": 1,
+      "kind": "Plan",
+      "name": "Client-API-Plan",
+      "namespace": "Dillards",
+      "version": "1.0",
+      "contentHash": "14a53453485a2ef7"
+    },
+    {
+      "id": "825ec5de-6043-46c0-bd56-d1d393b84659:0",
+      "projectId": "l2CcBhlp",
+      "filePath": "Dillards/Client-API-Properties.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792529325087,
+      "schemaVersion": 1,
+      "kind": "Properties",
+      "name": "Client-API-Properties",
+      "namespace": "client-api",
+      "version": "1.0",
+      "contentHash": "e63a8e6a2481880a"
+    },
+    {
+      "id": "8f74178b-87ab-4d43-b456-66847e48356c:0",
+      "projectId": "l2CcBhlp",
+      "filePath": "Dillards/Client-API-Product.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792518319380,
+      "schemaVersion": 1,
+      "kind": "Product",
+      "name": "Client-API-Product",
+      "namespace": "Dillards",
+      "version": "1.0",
+      "contentHash": "2e6fe1c60551c57a"
+    },
+    {
+      "id": "b806a619-08f7-4c5f-bd53-1c9d64af40be:0",
+      "projectId": "l2CcBhlp",
+      "filePath": "Dillards/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792518685702,
+      "schemaVersion": 1
+    },
+    {
+      "id": "e9e1b1e4-10bd-4bec-bd98-ecd33244edbc:0",
+      "projectId": "l2CcBhlp",
+      "filePath": "Dillards/Client-API.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792528852701,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "Client-API",
+      "namespace": "Dillards",
+      "version": "1.0",
+      "contentHash": "8eb054885d5f85d5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "6183dc9b-f2eb-4bc4-92ee-1ba3b5b6acc9",
+      "projectId": "l2CcBhlp",
+      "sourceNodeId": "e9e1b1e4-10bd-4bec-bd98-ecd33244edbc:0",
+      "targetNodeId": "20e99f69-ff09-4d39-b9af-127c0c04d893:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./client-api-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1792518035868,
+      "lastValidated": 1792518035868
+    },
+    {
+      "id": "62aae00c-b35e-44a8-800b-7b940a3355bd",
+      "projectId": "l2CcBhlp",
+      "sourceNodeId": "e9e1b1e4-10bd-4bec-bd98-ecd33244edbc:0",
+      "targetNodeId": "825ec5de-6043-46c0-bd56-d1d393b84659:0",
+      "targetRefType": "same-project",
+      "targetRefString": "client-api:Client-API-Properties:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792528852704,
+      "lastValidated": 1792529325096
+    },
+    {
+      "id": "7558fbf1-34ca-4f3a-9f8c-85cdd0990f57",
+      "projectId": "l2CcBhlp",
+      "sourceNodeId": "e9e1b1e4-10bd-4bec-bd98-ecd33244edbc:0",
+      "targetNodeId": "6fd2b071-ef6f-4607-9d32-430d2ed287e8:0",
+      "targetRefType": "same-project",
+      "targetRefString": "Dillards:Client-API-PolicySequence:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792518213066,
+      "lastValidated": 1792545020358
+    },
+    {
+      "id": "e4f563c7-f382-43b3-b369-2fcd1c5522ff",
+      "projectId": "l2CcBhlp",
+      "sourceNodeId": "8f74178b-87ab-4d43-b456-66847e48356c:0",
+      "targetNodeId": "70be1290-4c58-42e1-a179-3ad19adcea6a:0",
+      "targetRefType": "same-project",
+      "targetRefString": "Dillards:Client-API-Plan:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792518319384,
+      "lastValidated": 1792518319384
+    },
+    {
+      "id": "ec408b2a-4bfc-4930-a920-bf9b5ae23d71",
+      "projectId": "l2CcBhlp",
+      "sourceNodeId": "8f74178b-87ab-4d43-b456-66847e48356c:0",
+      "targetNodeId": "e9e1b1e4-10bd-4bec-bd98-ecd33244edbc:0",
+      "targetRefType": "same-project",
+      "targetRefString": "Dillards:Client-API:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792518302762,
+      "lastValidated": 1792528852705
+    }
+  ]
+}

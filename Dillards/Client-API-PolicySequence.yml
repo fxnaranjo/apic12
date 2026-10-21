@@ -1,0 +1,242 @@
+kind: DataPowerAssembly
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Client-API-PolicySequence
+  namespace: Dillards
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - datapower
+spec:
+  x-ibm-configuration:
+    gateway: datapower-api-gateway
+    assembly:
+      execute:
+        - set-variable:
+            version: 2.0.0
+            title: set-variable
+            actions:
+              - set: iss.claim
+                value: $(iss-claim)
+                type: string
+              - set: subject.claim
+                value: $(subject-claim)
+                type: string
+              - set: audience.claim
+                value: $(audience-claim)
+                type: string
+        - gatewayscript:
+            version: 2.0.0
+            title: set-certificates
+            source: >+
+              var orgname = context.get('api.org.name');
+
+
+              var catalogname = context.get('api.catalog.name');
+
+
+              // SIGN certificates
+
+
+              var sign = "jws-tls-client-profile";
+
+
+              var signPrivateKey=orgname + "_"+ catalogname +"_tlsp-" + sign +
+              "V1.0.0-key";
+
+              var signPublicKey=orgname + "_"+ catalogname +"_tlsp-" + sign +
+              "V1.0.0-ca-0";
+
+
+              console.error(signPrivateKey);
+
+              console.error(signPublicKey);
+
+
+              context.set('sign_privatekey', signPrivateKey) ;
+
+              context.set('sign_publiccert',signPublicKey);
+
+
+
+
+              // ENCRYPT certificates
+
+
+              var encrypt = "jwe-tls-client-profile";
+
+
+              var encPrivateKey=orgname + "_"+ catalogname +"_tlsp-" + encrypt +
+              "V1.0.0-key";
+
+              var encPublicKey=orgname + "_"+ catalogname +"_tlsp-" + encrypt +
+              "V1.0.0-ca-0";
+
+
+              console.error(encPrivateKey);
+
+              console.error(encPublicKey);
+
+
+              context.set('encrypt_privatekey', encPrivateKey);
+
+              context.set('encrypt_publiccert',encPublicKey);
+
+        - jwt-generate:
+            version: 2.2.0
+            title: jwt-generate
+            jwt: generated.jwt
+            iss-claim: iss.claim
+            exp-claim: 60
+            jti-claim: false
+            jws-alg: RS256
+            sub-claim: subject.claim
+            aud-claim: audience.claim
+            jws-crypto: $(sign_privatekey)
+            jwe-alg: RSA-OAEP-256
+            jwe-crypto: $(encrypt_publiccert)
+            jwe-enc: A256CBC-HS512
+        - gatewayscript:
+            version: 2.0.0
+            title: prepare-request
+            source: |-
+              console.error("**** AFTER JWT ***********");
+
+              context.request.body.readAsJSON(function (error, json) {
+                  if (error) {
+                      context.message.statusCode = 400;
+                      context.message.body.write({
+                          error: "Invalid JSON request payload"
+                      });
+                      context.message.header.set(
+                          "Content-Type",
+                          "application/json"
+                      );
+                      return;
+                  }
+                  
+                  var jwtFull = context.get('generated.jwt');
+
+                 
+
+                  var params = [];
+
+                  Object.keys(json).forEach(function (key) {
+                      var value = json[key];
+
+                      // Skip null/undefined values
+                      if (value === null || value === undefined) {
+                          return;
+                      }
+
+                      // Encode keys and values for form submission
+                      params.push(
+                          encodeURIComponent(key) + "=" +
+                          encodeURIComponent(
+                              typeof value === "object"
+                                  ? JSON.stringify(value)
+                                  : String(value)
+                          )
+                      );
+                  });
+
+                  var formBody = params.join("&");
+                  
+                  console.error(formBody);
+                  console.error(jwtFull);
+                  
+                  context.message.header.set(
+                      "Content-Type",
+                      "application/x-www-form-urlencoded"
+                  );
+                  context.message.header.set("Authorization", jwtFull);
+
+                  context.message.body.write(formBody);
+                  
+                  
+                 
+                  
+              });
+        - operation-switch:
+            version: 2.0.0
+            title: operation-switch
+            case:
+              - operations:
+                  - verb: post
+                    path: /client
+                execute:
+                  - invoke:
+                      version: 2.3.0
+                      title: Normal
+                      backend-type: detect
+                      header-control:
+                        type: blocklist
+                        values: []
+                      parameter-control:
+                        type: allowlist
+                        values: []
+                      http-version: HTTP/1.1
+                      timeout: 300
+                      verb: keep
+                      chunked-uploads: true
+                      persistent-connection: true
+                      cache-response: protocol
+                      cache-ttl: 900
+                      websocket-upgrade: false
+                      graphql-send-type: detect
+                      target-url: >-
+                        https://jwt-app-route-jwt-app.apps.itz-k0vfmt.hub01-lb.techzone.ibm.com/api/submit
+                      tls-profile: dillards-tls-client-profile:1.0.0
+              - operations:
+                  - verb: post
+                    path: /heavy
+                execute:
+                  - invoke:
+                      version: 2.3.0
+                      title: Heavy
+                      backend-type: detect
+                      header-control:
+                        type: blocklist
+                        values: []
+                      parameter-control:
+                        type: allowlist
+                        values: []
+                      http-version: HTTP/1.1
+                      timeout: 300
+                      verb: keep
+                      chunked-uploads: true
+                      persistent-connection: true
+                      cache-response: protocol
+                      cache-ttl: 900
+                      websocket-upgrade: false
+                      graphql-send-type: detect
+                      target-url: >-
+                        https://jwt-app-route-jwt-app.apps.itz-k0vfmt.hub01-lb.techzone.ibm.com/api/heavy
+                      tls-profile: dillards-tls-client-profile:1.0.0
+            otherwise: []
+        - switch:
+            version: 2.1.0
+            title: switch
+            case:
+              - condition: message.status.code=500
+                execute:
+                  - gatewayscript:
+                      version: 2.0.0
+                      title: handleError
+                      source: >-
+                        var response = { "kind": "error", "message": "Data
+                        Problem with user", "info": "debug" };
+
+                        context.message.body.write(response);
+
+                        context.message.header.set('Content-Type',
+                        "application/json");
+              - otherwise: []
+            description: ''
+      catch: []
+    phase: realized
+    enforced: true
+    testable: true
+    cors:
+      enabled: true

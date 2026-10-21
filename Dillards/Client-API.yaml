@@ -1,0 +1,15 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Client-API
+  version: '1.0'
+  namespace: Dillards
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./client-api-spec.yml
+  policy-sequence:
+    - $ref: Dillards:Client-API-PolicySequence:1.0
+  properties:
+    $ref: client-api:Client-API-Properties:1.0

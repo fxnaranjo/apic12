@@ -1,0 +1,20 @@
+kind: Properties
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Client-API-Properties
+  namespace: client-api
+  version: '1.0'
+  tags: []
+spec:
+  subject-claim:
+    value: Fxn
+    encoded: false
+    description: ''
+  audience-claim:
+    value: secure-api
+    encoded: false
+    description: ''
+  iss-claim:
+    value: https://fxnaranjo.example
+    description: ''
+    encoded: false

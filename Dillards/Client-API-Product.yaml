@@ -1,0 +1,12 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Client-API-Product
+  namespace: Dillards
+  version: '1.0'
+  tags: []
+spec:
+  apis:
+    - $ref: Dillards:Client-API:1.0
+  plans:
+    - $ref: Dillards:Client-API-Plan:1.0

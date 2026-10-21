@@ -1,0 +1,157 @@
+openapi: 3.0.4
+info:
+  title: Client-API
+  version: '1.0'
+  description: Testing API for JWT (JWE+JWS)
+paths:
+  /client:
+    summary: ''
+    description: validates the client information
+    post:
+      responses:
+        '200':
+          description: Default Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Data'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Client'
+        required: true
+  /heavy:
+    summary: API that returns a big payload
+    description: API that returns a big payload
+    post:
+      responses:
+        '200':
+          description: Default Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Heavy'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Client'
+components:
+  schemas:
+    Client:
+      title: Client
+      type: object
+      required:
+        - client
+        - market
+        - id
+      properties:
+        client:
+          type: string
+        market:
+          type: string
+        id:
+          type: string
+    Data:
+      title: ApiResponse
+      type: object
+      required:
+        - message
+        - data
+      properties:
+        message:
+          type: string
+        data:
+          type: object
+          required:
+            - client
+            - market
+            - id
+            - processID
+            - UUID
+          properties:
+            client:
+              type: string
+            market:
+              type: string
+            id:
+              type: string
+            processID:
+              type: string
+            UUID:
+              type: string
+    Heavy:
+      title: APIResponse
+      type: object
+      required:
+        - message
+        - data
+        - boxes
+        - content
+      properties:
+        message:
+          type: string
+          example: Request accepted
+        data:
+          type: object
+          required:
+            - client
+            - market
+            - id
+            - processID
+            - accountUUID
+          properties:
+            client:
+              type: string
+              example: Catalina
+            market:
+              type: string
+              minLength: 2
+              maxLength: 2
+              example: US
+            id:
+              type: string
+              pattern: ^[0-9]+$
+              example: '1714884752'
+            processID:
+              type: string
+              pattern: ^[a-zA-Z0-9]+$
+              example: 2dUiixgv0oBP7Mv
+            accountUUID:
+              type: string
+              pattern: ^[a-zA-Z0-9]+$
+              example: DDGnmnqD6Yfg
+        boxes:
+          type: array
+          items:
+            type: object
+            required:
+              - width
+              - height
+              - weight
+              - description
+              - serial
+            properties:
+              width:
+                type: integer
+                minimum: 0
+              height:
+                type: integer
+                minimum: 0
+              weight:
+                type: number
+                minimum: 0
+              description:
+                type: string
+              serial:
+                type: string
+        content:
+          type: string
+  securitySchemes:
+    basic-auth:
+      type: http
+      scheme: basic
+servers:
+  - url: /v1
