@@ -147,8 +147,6 @@ components:
                 type: string
               serial:
                 type: string
-        content:
-          type: string
   securitySchemes:
     basic-auth:
       type: http
