@@ -153,5 +153,8 @@ components:
     basic-auth:
       type: http
       scheme: basic
+      x-ibm-authentication-registry: myurluserregistry
 servers:
   - url: /v1
+security:
+  - basic-auth: []
