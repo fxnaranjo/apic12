@@ -1,0 +1,20 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: OpenBankingDP-Plan
+  namespace: OpenBankingDP
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  qos:
+    withQuota: {}
+  extensions:
+    dp-nano-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        apis:
+          - $ref: OpenBankingDP:OpenBanking:1.0.0
+            operations:
+              - path: /accounts/{accountId}
+                method: get

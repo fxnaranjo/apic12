@@ -1,0 +1,90 @@
+openapi: 3.0.0
+info:
+  title: OpenBanking
+  version: 1.0.0
+  description: OpenBanking
+servers:
+  - url: /openbanking/v1
+x-ibm-configuration: {}
+paths:
+  /accounts/{accountId}:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                title: account
+                type: object
+                properties:
+                  resourceId:
+                    type: string
+                  iban:
+                    type: string
+                  _links:
+                    type: object
+                    properties:
+                      balances:
+                        type: object
+                        properties:
+                          href:
+                            type: string
+                      transactions:
+                        type: object
+                        properties:
+                          href:
+                            type: string
+                  currency:
+                    type: string
+                  product:
+                    type: string
+                  cashAccountType:
+                    type: string
+                  name:
+                    type: string
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          schema:
+            type: string
+components:
+  responses: {}
+  securitySchemes:
+    oauth-enforce:
+      type: oauth2
+      flows:
+        authorizationCode:
+          scopes:
+            APIC: APIC
+          authorizationUrl: https://$(catalog.url)/myoauth/oauth2/authorize
+          tokenUrl: https://$(catalog.url)/myoauth/oauth2/token
+          refreshUrl: https://$(catalog.url)/myoauth/oauth2/token
+        clientCredentials:
+          scopes:
+            APIC: APIC
+          tokenUrl: https://$(catalog.url)/myoauth/oauth2/token
+          refreshUrl: https://$(catalog.url)/myoauth/oauth2/token
+        implicit:
+          scopes:
+            APIC: APIC
+          authorizationUrl: https://$(catalog.url)/myoauth/oauth2/authorize
+          refreshUrl: https://$(catalog.url)/myoauth/oauth2/token
+        password:
+          scopes:
+            APIC: APIC
+          tokenUrl: https://$(catalog.url)/myoauth/oauth2/token
+          refreshUrl: https://$(catalog.url)/myoauth/oauth2/token
+      description: oauth-enforce
+      x-ibm-oauth-provider: fxn-oauth
+    api-key:
+      name: X-IBM-Client-Id
+      in: header
+      description: ''
+      type: apiKey
+      x-key-type: client_id
+security:
+  - oauth-enforce:
+      - APIC
+    api-key: []

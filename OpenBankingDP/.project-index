@@ -1,0 +1,140 @@
+{
+  "nodes": [
+    {
+      "id": "3a979159-e104-4f13-adc3-30c70c97cb7a:0",
+      "projectId": "FbWeYFyC",
+      "filePath": "OpenBankingDP/OpenBankingDP-Product/OpenBankingDP-Product.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1794325195510,
+      "schemaVersion": 1,
+      "kind": "Product",
+      "name": "OpenBankingDP-Product",
+      "namespace": "OpenBankingDP",
+      "version": "1.0",
+      "contentHash": "7c70660a5c667650"
+    },
+    {
+      "id": "6875fac3-559f-446c-b97e-1a9a5ab32337:0",
+      "projectId": "FbWeYFyC",
+      "filePath": "OpenBankingDP/OpenBanking/api/openbanking-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1794325075662,
+      "schemaVersion": 1
+    },
+    {
+      "id": "7b3b9526-6167-443f-a49e-2b0088088cdb:0",
+      "projectId": "FbWeYFyC",
+      "filePath": "OpenBankingDP/OpenBankingDP-Product/plans/OpenBankingDP-Plan.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1794325799283,
+      "schemaVersion": 1,
+      "kind": "Plan",
+      "name": "OpenBankingDP-Plan",
+      "namespace": "OpenBankingDP",
+      "version": "1.0",
+      "contentHash": "4db44f3750097282"
+    },
+    {
+      "id": "99cb409d-e318-49ac-8491-1ab63a04374b:0",
+      "projectId": "FbWeYFyC",
+      "filePath": "OpenBankingDP/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1794325381742,
+      "schemaVersion": 1
+    },
+    {
+      "id": "acb598c2-31fb-4b18-bef4-96b0156b032c:0",
+      "projectId": "FbWeYFyC",
+      "filePath": "OpenBankingDP/OpenBanking/api/OpenBanking.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1794325077744,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "OpenBanking",
+      "namespace": "OpenBankingDP",
+      "version": "1.0.0",
+      "contentHash": "352a863d1305ae63"
+    },
+    {
+      "id": "e3d58880-d2da-4a5f-8071-baff858bec8e:0",
+      "projectId": "FbWeYFyC",
+      "filePath": "OpenBankingDP/OpenBanking/policies/OpenBankingDP-Policy.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1794333662718,
+      "schemaVersion": 1,
+      "kind": "DataPowerAssembly",
+      "name": "OpenBankingDP-Policy",
+      "namespace": "OpenBankingDP",
+      "version": "1.0",
+      "contentHash": "941c5f65e56d9840"
+    }
+  ],
+  "edges": [
+    {
+      "id": "0d4557fa-fa05-4184-a843-af9182189b55",
+      "projectId": "FbWeYFyC",
+      "sourceNodeId": "7b3b9526-6167-443f-a49e-2b0088088cdb:0",
+      "targetNodeId": "acb598c2-31fb-4b18-bef4-96b0156b032c:0",
+      "targetRefType": "same-project",
+      "targetRefString": "OpenBankingDP:OpenBanking:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1794325799332,
+      "lastValidated": 1794325799332
+    },
+    {
+      "id": "13abe19a-83f1-4dbb-af85-608d6ec0726a",
+      "projectId": "FbWeYFyC",
+      "sourceNodeId": "3a979159-e104-4f13-adc3-30c70c97cb7a:0",
+      "targetNodeId": "7b3b9526-6167-443f-a49e-2b0088088cdb:0",
+      "targetRefType": "same-project",
+      "targetRefString": "OpenBankingDP:OpenBankingDP-Plan:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1794325183779,
+      "lastValidated": 1794325799394
+    },
+    {
+      "id": "608e29fa-e070-4f36-8b7c-2f5f4d200bd0",
+      "projectId": "FbWeYFyC",
+      "sourceNodeId": "3a979159-e104-4f13-adc3-30c70c97cb7a:0",
+      "targetNodeId": "acb598c2-31fb-4b18-bef4-96b0156b032c:0",
+      "targetRefType": "same-project",
+      "targetRefString": "OpenBankingDP:OpenBanking:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1794325195523,
+      "lastValidated": 1794325195523
+    },
+    {
+      "id": "838376c5-8ef3-4469-82be-baa72faca8d5",
+      "projectId": "FbWeYFyC",
+      "sourceNodeId": "acb598c2-31fb-4b18-bef4-96b0156b032c:0",
+      "targetNodeId": "6875fac3-559f-446c-b97e-1a9a5ab32337:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./openbanking-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1794325076592,
+      "lastValidated": 1794325076592
+    },
+    {
+      "id": "d4aa0849-0afe-4074-915c-7edcfc03b623",
+      "projectId": "FbWeYFyC",
+      "sourceNodeId": "acb598c2-31fb-4b18-bef4-96b0156b032c:0",
+      "targetNodeId": "e3d58880-d2da-4a5f-8071-baff858bec8e:0",
+      "targetRefType": "same-project",
+      "targetRefString": "OpenBankingDP:OpenBankingDP-Policy:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1794325077745,
+      "lastValidated": 1794333662793
+    }
+  ]
+}

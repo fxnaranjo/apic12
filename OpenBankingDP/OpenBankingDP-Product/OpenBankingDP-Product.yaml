@@ -1,0 +1,12 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: OpenBankingDP-Product
+  namespace: OpenBankingDP
+  version: '1.0'
+  tags: []
+spec:
+  apis:
+    - $ref: OpenBankingDP:OpenBanking:1.0.0
+  plans:
+    - $ref: OpenBankingDP:OpenBankingDP-Plan:1.0
